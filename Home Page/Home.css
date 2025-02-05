@@ -1,0 +1,586 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #EEEEEE;
+}
+
+
+/* main <start>*/
+/* section-1 <start> */
+.section-1{
+    height: 100vh;
+    width: 100%;
+    background-color: #EEEEEE;
+    display: flex;
+}
+
+.left-container{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.left-container h1{
+    color: #A91D3A;
+    font-size: 2vmax;
+    margin-left: 35%;
+    height: 30px;
+    width: 520px;   
+}
+
+.left-container p{
+    color: #151515;
+    font-size: 1.5vmax;
+    width: 20vw;
+    word-spacing: 2.5px;
+    margin-left: 35%;
+}
+
+.left-container .repair-and-shop-btn{
+    display: flex;
+    gap: 12px;
+    margin-left: 35%;
+}
+
+.right-container{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+
+.display-images img{
+    height: 23vmax;
+    animation: changeimage 20s linear infinite;
+    background-color: #A91D3A;
+    border-radius: 50%;
+}
+
+/* section-1 <end> */
+
+/* section-2 <start> */
+.section-2 {
+    height: 95vh;
+    width: 100%;
+    background-color: #151515;
+    font-size: 1.5vmax;
+}
+
+.section-2 h2{
+    color: #EEEEEE;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.product-card{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.product-card .card-1,.card-2,.card-3{
+    height: 20vmax;
+    width: 19vmax;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 5px solid #A91D3A;
+}
+
+.card-image,.card-image-3{
+    height: 69%;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.card-image img{/*card-image 1 and 2*/
+    height: 12vmax;
+    transition: height 0.2s ease;
+}
+
+.card-image img:hover{
+    height: 13vmax;
+}
+
+.card-image-3 img{
+    height: 10vmax;
+    transition: height 0.2s ease;
+}
+
+.card-image-3 img:hover{
+    height: 11vmax;
+}
+
+.best-seller-product-details h3{
+    color: #A91D3A;
+    font-size: 1.3vmax;
+    margin-left: 12px;
+}
+
+.review-star{
+    margin-left: 12px;
+}
+
+.review-star i{
+    color: #FFA41C;
+    font-size: 1vmax;
+}
+
+.discount-and-orderbtn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.discount-and-orderbtn h4{
+    font-size: 1.1vmax;
+    font-weight: 500;
+    margin-left: 12px;
+}
+
+.discount-and-orderbtn button{
+    font-size: 1vmax;
+    padding: 0.3vmax 1vmax;
+    border-radius: 15px;
+    border: 1px solid #151515;
+    background: #151515;
+    color: #EEEEEE;
+    margin-right: 0.5vmax;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.discount-and-orderbtn button:hover{
+    background-color: #A91D3A;
+    color: #FFFFFF;
+    border: 1px solid #A91D3A;
+}
+
+.companeis-logo{
+    height: 4.5vmax;
+    width: 100%;
+    background-color: #EEEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* companeis logo images size */
+.companeis-logo #boat{
+    height: 2vmax;
+}
+.companeis-logo #urban-audio{
+    height: 4vmax;
+}
+.companeis-logo #oneplus{
+    height: 4vmax;
+}
+.companeis-logo #oppo{
+    height: 2.8vmax;
+}
+.companeis-logo #sumsung{
+    height: 7vmax;
+}
+.companeis-logo #mi{
+    height: 3vmax;
+}
+
+.companeis-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* section-2 <end> */
+
+/* section-3 <start> */
+
+.section-3{
+    height: 95vh;
+    background-color: #A91D3A;
+}
+
+.section-3 h2{
+    color: #EEEEEE;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 24px;
+    font-size: 2vmax;
+}
+
+.review-card-container{
+    width: 100%;
+    height: 82%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* gap: 60px; give gap in responsive if it is not working */
+}
+
+.review-card-container .review-card{
+    margin: 0px 4vmax 0px 4vmax;
+    height: 12vmax;
+    width: 37vmax;
+    border-radius: 15px;
+    background-color: #151515;
+}
+
+
+.image-and-name-of-reviewer{
+    display: flex;
+    align-items: center;
+}
+
+.image-and-name-of-reviewer h3{
+    color: #EEEEEE;
+    border-bottom: 1px solid #A91D3A;
+    font-size: 1vmax;
+}
+
+.image-and-name-of-reviewer img{
+    height: 4.5vmax;
+    border-radius: 50%;
+    margin: 15px;
+    border: 3px solid #A91D3A;
+}
+
+.review-text-and-star{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.review-text-and-star h3{
+    color: #EEEEEE;
+    font-size: 1vmax;
+    font-weight: 500;
+    margin-left: 15px;
+    width: 88%;
+}
+
+.for-margin-left{
+    margin-left: 15px;
+}
+
+/* section-3 <end> */
+
+/* section-4 <start> */
+
+.section-4{
+    height: 90vh;
+    background-color: #EEEEEE;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    gap: 40px;
+}
+
+.happy-customer-img{
+    margin-left: 25%;
+}
+
+.happy-customer-img img{
+    height: 26vmax;
+    border-radius: 50%;
+    border: 5px solid #A91D3A;
+}
+
+
+.about-finalsolution h2{
+    color: #A91D3A;
+    font-size: 2.5vmax;
+    margin-bottom: 20px;
+}
+
+.about-finalsolution p{
+    width: 70%;
+    font-size: 1.5vmax;
+}
+
+.about-finalsolution button{
+    margin-top: 18px;
+    margin-right: 6px;
+}
+
+/* section-4 <end> */
+
+/* main <end> */
+
+
+
+
+/* page responsiveness */
+
+@media(max-width: 1028px){
+
+    .section-4 {
+        flex-direction: column;
+    }
+
+    .happy-customer-img {
+        margin-top: 10%;
+        margin-left: 0;
+    }
+
+    .about-finalsolution h2 {
+        text-align: center;
+    }
+
+    .about-finalsolution{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-finalsolution p {
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    .review-card-container .review-card {
+        height: 15vmax;
+    }
+}
+
+@media(max-width: 600px){
+    /* section-1 */
+    .section-1 {
+        flex-direction: column;
+        height: 100vh;
+    }
+    
+    .right-container {
+        height: 0%;
+        margin-bottom: 31%;
+        gap: 12px;
+    }
+
+    .display-images img {
+        height: 50vw;
+    }
+
+    .left-container {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+
+    .left-container h1 {
+        margin-left: 0;
+        font-size: 6vw;
+        width: 85%;
+    }
+
+    .left-container p {
+        margin-left: 0;
+        width: 85%;
+        font-size: 5.5vw;
+    }
+    
+    .left-container .repair-and-shop-btn {
+        margin-left: 0;
+        width: 85%;
+    }
+
+    .right-container {
+        width: 100%;
+    }
+
+
+    /* section-2 */
+    .section-2 h2{
+        font-size: 5vw;
+    }
+
+    /* section-3 */
+    .section-3 {
+        height: 100%;
+    }
+
+
+    .review-card-container{
+        padding-bottom: 14%;
+        gap: 22px;
+    }
+
+    .review-card-container .review-card {
+        width: 76vw;
+    }
+
+    .review-card-container .review-card {
+        height: 30vw;
+    }
+
+    .image-and-name-of-reviewer img {
+        height: 8.5vw;
+    }
+
+    .image-and-name-of-reviewer h3 {
+        font-size: 2.5vw;
+    }
+    .review-text-and-star h3 {
+        font-size: 2.9vw;
+    }
+
+    .review-star i {
+        font-size: 2.3vw;
+    }
+
+    /* section-4 */
+    .section-4{
+            height: 100%;
+    }
+    .about-finalsolution h2 {
+        font-size: 7.5vw;
+    }
+
+    .about-finalsolution p {
+        font-size: 4.5vw;
+    }
+
+    .section-3 h2 {
+        font-size: 5vw;
+        padding-top: 50px;        
+        padding-bottom: 30px;
+    }
+
+
+}
+
+@media(max-width: 428px){
+
+    /* section-1 */
+    .left-container {
+        height: 70%;
+        gap: 9px;
+    }
+
+    .left-container .repair-and-shop-btn{
+        margin-top: 10px;
+    }
+    /* section-2 */
+
+    .section-2 h2{
+        font-size: 9vw;
+        padding: 20px 0px;
+    }
+
+    .section-2 {
+        height: 100%;
+    }
+
+    .product-card{
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .product-card .card-1, .card-2, .card-3{
+        margin-bottom: 45px;
+        height: 64vw;
+        width: 67vw;
+    }
+
+    .card-image img {
+        height: 35vw;
+    }
+
+    .card-image img:hover {
+        height: 40vw;
+    }
+
+    .card-image-3 img {
+        height: 30vw;
+    }
+    .card-image-3 img:hover{
+        height: 35vw;
+    }
+
+    .best-seller-product-details h3 {
+        font-size: 4.8vw;
+    }
+
+    .review-star i {
+        font-size: 3.3vw;
+    }
+
+    .discount-and-orderbtn h4 {
+        font-size: 4vw;
+    }
+
+    .discount-and-orderbtn h4 {
+        font-size: 4vw;
+    }
+
+    .discount-and-orderbtn button {
+        font-size: 3.5vw;
+    }
+
+    .companeis-logo #boat {
+        height: 3vw;
+    }
+    
+    .companeis-logo #urban-audio {
+        height: 7vw;
+    }
+    
+    .companeis-logo #oneplus {
+        height: 7vw;
+    }
+    
+    .companeis-logo #oppo {
+        height: 4vw;
+    }
+    
+    .companeis-logo #sumsung {
+        height: 9vw;
+    }
+    
+    .companeis-logo #mi {
+        height: 4vw;
+    }
+
+    /* section-3 */
+    .review-card-container .review-card {
+        height: 37vw;
+    }
+    
+}
+
+@media(max-width: 325x){
+
+    /*section-3*/
+    .review-card-container .review-card {
+        height: 45vw;
+    }
+    /*section-5*/
+    .our-promise-content {
+        gap: 0px;
+    }
+    .text-container p {
+        font-size: 3vw;
+    }
+}
+
+
+

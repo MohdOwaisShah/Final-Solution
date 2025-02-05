@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /><!--aos style-->
+    <link rel="stylesheet" href="/Assets/Style & Functionality/Nav-Footer-Promise.css">
+    <!--navigation-promise-footer-style-->
+    <link rel="stylesheet" href="Shop-All.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Shop-All-Products</title>
+</head>
+
+<body>
+
+    <!--cart container-->
+    <div class="cart-page" id="cart-hide">
+        <div class="cart-navigation">
+            <div id="logo" class="cart-page-logo"><a href="/Home Page/Home.html">F<span class="changeColor">S</span></a>
+            </div><!-- (FS)logo -->
+            <div class="three-process">
+                <div id="process-line"></div>
+                <div id="cart-process">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div id="address-process">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div id="payment-process">
+                    <i class="fa-solid fa-credit-card"></i>
+                </div>
+            </div>
+            <i class="fa-solid fa-circle-xmark" id="cart-close-icon"></i>
+        </div>
+
+        <!-- empty cart page -->
+        <div class="empty-cart-container" id="remove-empty-page">
+            <img src="/Assets/Images/empty-cart.png" alt="">
+            <div class="empty-cart-text-btn">
+                <h2>your cart is empty</h2>
+                <a href="/Shop-All Page/Shop-All.html"><button>Shop Now!</button></a>
+            </div>
+        </div>
+
+        <!-- cart product & bill container -->
+        <div class="cart-main-container">
+            
+            <!-- cart product -->
+            <div class="cart-products-container">
+
+                <div class="cart-product" id="1">
+                    <div class="cart-product-image">
+                        <img src="/Assets/products-images/smart-watch-1.png" alt="">
+                    </div>
+                    <div class="cart-product-details">
+                        <div class="cart-product-name-price">
+                            <h2>BoAt Ultima chronos amolade</h2>
+                            <h3 class="changeColor">Rs.<h3 id="1" class="only-price">2299</h3></h3>
+                        </div>
+                        <div class="product-quantity-btn" id="1">
+                            <button class="decrement" id="1">-</button>
+                            <p class="number-of-quantity" id="1">1</p>
+                            <button class="increment" id="1">+</button>
+                            <i class="fa-solid fa-trash trash-icon"></i>
+                        </div>
+                    </div>
+                <div class="cart-product-border"></div>
+                </div>
+                
+                <div class="cart-product" id="2">
+                    <div class="cart-product-image">
+                        <img src="/Assets/products-images/smart-watch-1.png" alt="">
+                    </div>
+                    <div class="cart-product-details">
+                        <div class="cart-product-name-price">
+                            <h2>BoAt Ultima chronos amolade</h2>
+                            <h3 class="changeColor">Rs.<h3 id="2" class="only-price">2299</h3></h3>
+                        </div>
+                        <div class="product-quantity-btn" id="2">
+                            <button class="decrement" id="2">-</button>
+                            <p class="number-of-quantity" id="2">1</p>
+                            <button class="increment" id="2">+</button>
+                            <i class="fa-solid fa-trash trash-icon"></i>
+                        </div>
+                    </div>
+                <div class="cart-product-border"></div>
+                </div>
+                
+                <div class="cart-product" id="2">
+                    <div class="cart-product-image">
+                        <img src="/Assets/products-images/smart-watch-1.png" alt="">
+                    </div>
+                    <div class="cart-product-details">
+                        <div class="cart-product-name-price">
+                            <h2>BoAt Ultima chronos amolade</h2>
+                            <h3 class="changeColor">Rs.<h3 id="3" class="only-price">2299</h3></h3>
+                        </div>
+                        <div class="product-quantity-btn" id="3">
+                            <button class="decrement" id="3">-</button>
+                            <p class="number-of-quantity" id="3">1</p>
+                            <button class="increment" id="3">+</button>
+                            <i class="fa-solid fa-trash trash-icon"></i>
+                        </div>
+                    </div>
+                <div class="cart-product-border"></div>
+                </div>
+                
+                <div class="cart-product" id="2">
+                    <div class="cart-product-image">
+                        <img src="/Assets/products-images/smart-watch-1.png" alt="">
+                    </div>
+                    <div class="cart-product-details">
+                        <div class="cart-product-name-price">
+                            <h2>BoAt Ultima chronos amolade</h2>
+                            <h3 class="changeColor">Rs.<h3 id="4" class="only-price">2299</h3></h3>
+                        </div>
+                        <div class="product-quantity-btn" id="4">
+                            <button class="decrement" id="4">-</button>
+                            <p class="number-of-quantity" id="4">1</p>
+                            <button class="increment" id="4">+</button>
+                            <i class="fa-solid fa-trash trash-icon"></i>
+                        </div>
+                    </div>
+                <div class="cart-product-border"></div>
+                </div>
+
+            
+            </div>
+
+            <!-- cart bill container -->
+            <div class="cart-products-bill">
+                <div class="cart-bill-container">
+                    <h3>PRICE DETAILS</h3>
+                    <div class="cart-total-mrp">
+                        <h4>TOTAL MRP</h4>
+                        <h4 id="total-mrp-price">0</h4>
+                    </div>
+
+                    <div class="coupon-discount">
+                        <h4>COUPON DISC..</h4>
+                        <div class="apply-coupon">
+                            <input type="text" id="coupon-input-box">
+                            <p id="apply-button">Apply</p>
+                        </div>
+                    </div>
+
+                    <div class="gift-package">
+                        <h4>GIFT PACKAGE</h4>
+                        <h4>RS 25 <input type="checkbox"></h4>
+                    </div>
+                    
+                    <div class="bill-price-line"></div><!-- border -->
+
+                    <div class="cart-total-amt">
+                        <h4>TOTAL AMT</h4>
+                        <h4 id="total-amount">15000</h4>
+                    </div>
+
+                    <div class="payments-container">
+                        <img src="/Assets/Images/payment-icon/Visa.png" alt="Visa-img">
+                        <img src="/Assets/Images/payment-icon/mastercard.png" alt="Mastercard-img">
+                        <img src="/Assets/Images/payment-icon/PayPal.png" alt="PayPal-img">
+                        <img src="/Assets/Images/payment-icon/upi.png" id="upi-payment" alt="UPI-img">
+                    </div>
+
+                </div>
+                <button id="place-order-btn">PLACE ORDER</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- search  -->
+    <div class="search-body">
+        <input type="text" placeholder="Search Product" id="search-input">
+        <i class="fa-solid fa-xmark" id="close"></i>
+        <!-- search-products-container -->
+        <div class="search-products-container">
+            <div class="search-products">
+
+                <!-- search-product-1 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/smart-watch-1.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>boAt ultima chronos amolade</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>2299</h4>
+                                <p>Rs.8000</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- search-product-2 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/boat-speaker-1.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>boAt stone 352 speaker</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>1699</h4>
+                                <p>Rs.3000</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <!-- search-product-3 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/samsung-earbuds-1.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>samsung galaxy buds2 pro</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>9990</h4>
+                                <p>Rs.15000</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <!-- search-product-4 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/84w-charger.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>85w realme fast charging</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>1000</h4>
+                                <p>Rs.1200</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <!-- search-product-5 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/wire-earphone-1.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>Cool boAt Wire Earphone</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>300</h4>
+                                <p>Rs.350</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- search-product-6 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/boat-cable-2.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>boAt Type C A750 Fast USB</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>399</h4>
+                                <p>Rs.999</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <!-- search-product-7 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/boat-neckband-1.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>boAt 255 Pro+ Neckband</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>1099</h4>
+                                <p>Rs.1200</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <!-- search-product-8 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/realme-earbuds-1.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>Realme Buds T110 Earbuds</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>1399</h4>
+                                <p>Rs.3000</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <!-- search-product-9 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/smart-watch-2.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>Fire-Boltt ARC 49.8mm Curve</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>1699</h4>
+                                <p>Rs.12000</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- search-product-10 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/boat-speaker-2.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>boAt Stone 580 Speaker</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>1999</h4>
+                                <p>Rs.4999</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <!-- search-product-11 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/boat-cable-1.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>boAt Micro Fast USB</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>199</h4>
+                                <p>Rs.399</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <!-- search-product-12 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/UA-neckband-1.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>Urban Audio UTB 507</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>900</h4>
+                                <p>Rs.1000</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <!-- search-product-13 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/boat-earbuds-1.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>boAt 141 ANC TWS Earbuds</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>1799</h4>
+                                <p>Rs.4000</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- search-product-14 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/oneplus-neckband-1 (1).png" class="search-product-img"
+                                alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>Oneplus Bullets Z2 Neckband</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>1550</h4>
+                                <p>Rs.1700</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <!-- search-product-15 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/84w-charger.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>85W Mi Fast Charging</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>1000</h4>
+                                <p>Rs.1200</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <!-- search-product-16 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/wire-earphone-2.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>Boult Audio Wire Earphone</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>350</h4>
+                                <p>Rs.400</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <!-- search-product-17 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/84w-charger.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>85W Oppo Fast Charging</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>1000</h4>
+                                <p>Rs.1200</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <!-- search-product-18 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/boat-neckband-4.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>boAt Crogie SY02 Neckband</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>599</h4>
+                                <p>Rs.1000</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- search-product-19 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/JBL-speaker-1.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>JBL Flip 6 Speaker</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>9999</h4>
+                                <p>Rs.13999</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <!-- search-product-20 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/oneplus-earbuds-1.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>OnePlus Nord Buds 2r</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>1799</h4>
+                                <p>Rs.2200</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <!-- search-product-21 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/UA-neckband-2.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>Urban Audio 5.0 Neckband</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>1299</h4>
+                                <p>Rs.2000</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <!-- search-product-22 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/84w-charger.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>85W Samsung Fast Charging</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>1000</h4>
+                                <p>Rs.1200</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- search-product-23 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/smart-watch-3.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>Noise Vortex Plus 1.46 Amoled</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>2199</h4>
+                                <p>Rs.6999</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <!-- search-product-24 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/boat-cable-3.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>boAt Type C To C Fast USB</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>299</h4>
+                                <p>Rs.899</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <!-- search-product-25 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/boat-neckband-5.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>boAt 255 Neo Neckband</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>899</h4>
+                                <p>Rs.2000</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <!-- search-product-26 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/boat-earbuds-3.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>boAt 170 TWS Earbuds</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>999</h4>
+                                <p>Rs.2000</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- search-product-27 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/boat-neckband-3.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>boAt 245 pro Neckband</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>999</h4>
+                                <p>Rs.1150</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <!-- search-product-28 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/boat-neckband-2.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>boAt 255 Max Neckband</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>1100</h4>
+                                <p>Rs.1300</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <!-- search-product-29 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/boat-earbuds-2.png" class="search-product-img" alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>boAt 141 TWS Earbuds</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>999</h4>
+                                <p>Rs.2000</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+                <!-- search-product-30 -->
+                <a href="" class="search-products-link">
+                    <div class="search-product">
+                        <!-- search-product-image -->
+                        <div class="search-product-image-container">
+                            <img src="/Assets/products-images/oneplus-neckband-1 (2).png" class="search-product-img"
+                                alt="">
+                        </div>
+
+                        <div class="search-product-details">
+                            <h3>OnePlus Bullets Z2 Neckband</h3>
+                            <div class="search-product-price">
+                                <h4><span class="changeColor">Rs.</span>1699</h4>
+                                <p>Rs.1800</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div id="logo"><a href="/Home Page/Home.html">F<span class="changeColor">S</span></a></div><!-- (FS)logo -->
+        <!-- navigation-links & add to card -->
+        <div class="navigation active">
+            <li> <!-- id="drop-down-main"-->
+                <label id="mobile-accessories">Mobile accessories <i
+                        class="fa-solid fa-angle-down down-arrow-res"></i></label>
+                <label id="responsive-mobile-accessories">Mobile accessories <i
+                        class="fa-solid fa-angle-down down-arrow-res"></i> </label>
+                <ul class="list-of-accessories responsive-list-of-accessories">
+                    <li><a class="name-of-accessories" href="google.com"><img src="/Assets/Images/charger.png" alt=""
+                                class="img-height"> Charger</a></li>
+                    <li><a class="name-of-accessories"><img src="/Assets/Images/cable.png" alt="amazone.in"
+                                class="img-height"> Data cable</a></li>
+                    <li><a class="name-of-accessories"><img src="/Assets/Images/wire-earphone.png" alt=""
+                                class="img-height">Wire Earphone</a></li>
+                    <li><a class="name-of-accessories"><img src="/Assets/Images/neckband.png" alt=""
+                                style="height: 4vmax;" id="neckband-img">Neckband</a></li>
+                    <li><a class="name-of-accessories"><img src="/Assets/Images/earbuds.png" alt=""
+                                class="img-height">Earbuds</a></li>
+                    <li><a class="name-of-accessories"><img src="/Assets/Images/4.png" alt=""
+                                class="img-height">Speaker</a></li>
+                </ul><!--end list-of-accessories-->
+            </li>
+            <li><a href="/Repairing Page/repair.html" class="each-nav-style">Repairing</a></li>
+            <li><a href="/Shop-All Page/Shop-All.html" class="each-nav-style">Shop All</a></li>
+            <li><a href="" class="each-nav-style">Contact</a></li>
+        </div><!--end navigation-->
+        <div class="another-navigation">
+            <i class="fa-solid fa-magnifying-glass" id="search"></i>
+            <button id="sign-in">Sign in</button>
+            <div class="cart-container">
+                <i class="fa-solid fa-cart-shopping" id="shop-cart">
+                </i>
+                <i id="cart-number">0</i>
+            </div>
+            <i class="fa-solid fa-bars" id="menu"></i>
+        </div>
+    </nav>
+
+    <main>
+        <section class="main-section">
+            <div class="shop-all-heading">
+                <h1 data-aos="fade-down">All Products</h1>
+            </div>
+
+            <div class="pop-up-container">
+                <!-- <div class="pop-up">
+                <img src="/Assets/products-images/boat-cable-1.png" alt="">
+                <h3>Product Added!</h3>
+            </div> -->
+            </div>
+
+            <div class="filter-price-container" data-aos="fade-right">
+                <h4 id="filter"><i class="bi bi-sliders"></i> filter Price</h4>
+                <select id="filter-prices">
+                    <option>0 - All</option>
+                    <option>0 - 500</option>
+                    <option>500 - 1k</option>
+                    <option>1k - 10k</option>
+                </select>
+            </div>
+            <!--product-page-1-->
+            <div class="shop-cards-container products" data-aos="fade-right">
+                <div class="card-1 card">
+                    <a href="" target="_blank">
+                        <div class="company-name">
+                            <h3>Realme</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="charger-img" src="/Assets/products-images/84w-charger.png">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>85W Realme Fast charger</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>1000</h4>
+                                    <p>Rs.1200</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-2 card">
+                    <a href="" target="_blank">
+                        <div class="company-name">
+                            <h3>Mi</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="charger-img" src="/Assets/products-images/84w-charger.png" alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>85W Mi Fast charger</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>1000</h4>
+                                    <p>Rs.1200</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-3 card">
+                    <a href="" target="_blank">
+                        <div class="company-name">
+                            <h3>samsung</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="charger-img" src="/Assets/products-images/84w-charger.png" alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>85W samsung Fast charger</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>1000</h4>
+                                    <p>Rs.1200</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-4 card">
+                    <a href="" target="_blank">
+                        <div class="company-name">
+                            <h3>oppo</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="charger-img" src="/Assets/products-images/84w-charger.png" alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>85W oppo Fast charger</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>1000</h4>
+                                    <p>Rs.1200</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-5 card">
+                    <a href="/Product Pages/Earphone-1.html" target="_blank">
+                        <div class="company-name">
+                            <h3>boat</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="wire-earphone-img" src="/Assets/products-images/wire-earphone-1.png" alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>Cool boAt Wire Earphone</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>300</h4>
+                                    <p>Rs.350</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-6 card">
+                    <a href="/Product Pages/Earphone-2.html" target="_blank">
+                        <div class="company-name">
+                            <h3>boult</h3>
+                        </div>
+
+                        <div class="product-image images"><img class="wire-earphone-img"
+                                src="/Assets/products-images/wire-earphone-2.png" alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>Boult Audio Wire Earphone</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>350</h4>
+                                    <p>Rs.400</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-7 card">
+                    <a href="/Product Pages/Neckband-boat-1.html" target="_blank">
+                        <div class="company-name">
+                            <h3>boat</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="neckband-speaker-img" src="/Assets/products-images/boat-neckband-1.png" alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>boAt 255 Pro+ Neckband</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>1099</h4>
+                                    <p>Rs.1200</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-8 card">
+                    <a href="/Product Pages/Neckband-boat-2.html" target="_blank">
+                        <div class="company-name">
+                            <h3>boat</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="neckband-speaker-img" src="/Assets/products-images/boat-neckband-2.png" alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>boAt 255 Max Neckband</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>1100</h4>
+                                    <p>Rs.1300</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-9 card">
+                    <a href="/Product Pages/Neckband-boat-3.html" target="_blank">
+                        <div class="company-name">
+                            <h3>boat</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="neckband-speaker-img" src="/Assets/products-images/boat-neckband-3.png" alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>boAt 245 pro Neckband</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>999</h4>
+                                    <p>Rs.1150</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-10 card">
+                    <a href="/Product Pages/Neckband-boat-4.html" target="_blank">
+                        <div class="company-name">
+                            <h3>boat</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="neckband-speaker-img" src="/Assets/products-images/boat-neckband-4.png" alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>boAt Crogie SY02 Neckband</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>599</h4>
+                                    <p>Rs.1000</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-11 card">
+                    <a href="/Product Pages/Neckband-boat-5.html" target="_blank">
+                        <div class="company-name">
+                            <h3>boat</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="neckband-speaker-img" src="/Assets/products-images/boat-neckband-5.png" alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>boAt 255 Neo Neckband</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>899</h4>
+                                    <p>Rs.2000</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-12 card">
+                    <a href="/Product Pages/UA-neckband-1.html" target="_blank">
+                        <div class="company-name">
+                            <h3>Urban Audio</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="UA-neckband-1" src="/Assets/products-images/UA-neckband-1.png" alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>Urban Audio 5.0 Neckband</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>1299</h4>
+                                    <p>Rs.2000</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+            </div>
+
+            <!--product-page-2-->
+            <div class="shop-cards-container products" data-aos="fade-right" id="product-page-2">
+                <div class="card-1 card">
+                    <a href="/Product Pages/UA-neckband-2.html" target="_blank">
+                        <div class="company-name">
+                            <h3>urban audio</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="UA-neckband-1" src="/Assets/products-images/UA-neckband-2.png" alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>Urban Audio UTB 507</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>900</h4>
+                                    <p>Rs.1000</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-2 card">
+                    <a href="/Product Pages/OnePlus-neckband-1.html" target="_blank">
+                        <div class="company-name">
+                            <h3>OnePlus</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="neckband-speaker-img" src="/Assets/products-images/oneplus-neckband-1 (1).png"
+                                alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>Oneplus Bullets Z2 Neckband</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>1550</h4>
+                                    <p>Rs.1700</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-3 card">
+                    <a href="/Product Pages/OnePlus-neckband-2.html" target="_blank">
+                        <div class="company-name">
+                            <h3>onePlus</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="neckband-speaker-img" src="/Assets/products-images/oneplus-neckband-1 (2).png"
+                                alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>OnePlus Bullets Z2 Neckband</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>1699</h4>
+                                    <p>Rs.1800</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-4 card">
+                    <a href="/Product Pages/Boat-earbuds-1.html" target="_blank">
+                        <div class="company-name">
+                            <h3>boAt</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="earbuds-smartWatch-cable-img" src="/Assets/products-images/boat-earbuds-1.png"
+                                alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>boAt 141 ANC TWS Earbuds</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>1799</h4>
+                                    <p>Rs.4000</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-5 card">
+                    <a href="/Product Pages/Boat-earbuds-2.html" target="_blank">
+                        <div class="company-name">
+                            <h3>boAt</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="earbuds-smartWatch-cable-img" src="/Assets/products-images/boat-earbuds-2.png"
+                                alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>boAt 141 TWS Earbuds</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>999</h4>
+                                    <p>Rs.2000</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-6 card">
+                    <a href="/Product Pages/Boat-earbuds-3.html" target="_blank">
+                        <div class="company-name">
+                            <h3>boAt</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="earbuds-smartWatch-cable-img" src="/Assets/products-images/boat-earbuds-3.png"
+                                alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>boAt 170 TWS earbuds</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>990</h4>
+                                    <p>Rs.2000</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-7 card">
+                    <a href="/Product Pages/Realme-earbuds-1.html" target="_blank">
+                        <div class="company-name">
+                            <h3>realme</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="earbuds-smartWatch-cable-img" src="/Assets/products-images/realme-earbuds-1.png"
+                                alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>realme buds T110 earbuds</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>1399</h4>
+                                    <p>Rs.3000</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-8 card">
+                    <a href="/Product Pages/OnePlus-earbuds-1.html" target="_blank">
+                        <div class="company-name">
+                            <h3>OnePlus</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="earbuds-smartWatch-cable-img"
+                                src="/Assets/products-images/oneplus-earbuds-1.png" alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>onePlus nord buds 2r</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>1799</h4>
+                                    <p>Rs.2200</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-9 card">
+                    <a href="/Product Pages/samsung-earbuds-1.html" target="_blank">
+                        <div class="company-name">
+                            <h3>samsung</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="earbuds-smartWatch-cable-img"
+                                src="/Assets/products-images/samsung-earbuds-1.png" alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>samsung galaxy buds2 pro</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>9990</h4>
+                                    <p>Rs.15000</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!--product-page-3-->
+            <div class="shop-cards-container products" data-aos="fade-right" id="product-page-3">
+                <div class="card-1 card">
+                    <a href="/Product Pages/Boat-speaker-1.html" target="_blank">
+                        <div class="company-name">
+                            <h3>boAt</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="neckband-speaker-img" src="/Assets/products-images/boat-speaker-1.png" alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>boAt Stone 352 Speaker</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>1699</h4>
+                                    <p>Rs.3000</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-2 card">
+                    <a href="/Product Pages/Boat-speaker-2.html" target="_blank">
+                        <div class="company-name">
+                            <h3>boAt</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="neckband-speaker-img" src="/Assets/products-images/boat-speaker-2.png" alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>boAt Stone 580 Speaker</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>1999</h4>
+                                    <p>Rs.4999</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-3 card">
+                    <a href="/Product Pages/Jbl-speaker-1.html" target="_blank">
+                        <div class="company-name">
+                            <h3>JBL</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="neckband-speaker-img" src="/Assets/products-images/JBL-speaker-1.png" alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>JBL Flip 6 Speaker</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>9999</h4>
+                                    <p>Rs.13999</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-4 card">
+                    <a href="/Product Pages/Boat-smart-watch.html" target="_blank">
+                        <div class="company-name">
+                            <h3>boAt</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="earbuds-smartWatch-cable-img" src="/Assets/products-images/smart-watch-1.png"
+                                alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>boAt Ultima Chronos Amolade</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>2299</h4>
+                                    <p>Rs.8000</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-5 card">
+                    <a href="/Product Pages/Fire-boltt-smart-watch-1.html" target="_blank">
+                        <div class="company-name">
+                            <h3>Fire-Boltt</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="earbuds-smartWatch-cable-img" src="/Assets/products-images/smart-watch-2.png"
+                                alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>Fire-Boltt ARC 49.8mm Curve</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>1699</h4>
+                                    <p>Rs.12000</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-6 card">
+                    <a href="/Product Pages/Noise-smart-watch-1.html" target="_blank">
+                        <div class="company-name">
+                            <h3>Noise</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="earbuds-smartWatch-cable-img" src="/Assets/products-images/smart-watch-3.png"
+                                alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>Noise Vortex Plus 1.46 Amoled</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>2199</h4>
+                                    <p>Rs.6999</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-7 card">
+                    <a href="/Product Pages/Boat-cable-1.html" target="_blank">
+                        <div class="company-name">
+                            <h3>boAt</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="earbuds-smartWatch-cable-img" src="/Assets/products-images/boat-cable-1.png"
+                                alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>boAt Micro Fast USB</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>199</h4>
+                                    <p>Rs.399</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-8 card">
+                    <a href="/Product Pages/Boat-cable-2.html" target="_blank">
+                        <div class="company-name">
+                            <h3>boAt</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="earbuds-smartWatch-cable-img" src="/Assets/products-images/boat-cable-2.png"
+                                alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>boAt Type C A750 Fast USB</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>399</h4>
+                                    <p>Rs.999</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-9 card">
+                    <a href="/Product Pages/Boat-cable-3.html" target="_blank">
+                        <div class="company-name">
+                            <h3>boAt</h3>
+                        </div>
+
+                        <div class="product-image images">
+                            <img class="earbuds-smartWatch-cable-img" src="/Assets/products-images/boat-cable-3.png"
+                                alt="">
+                        </div>
+
+                        <div class="product-details">
+                            <h3>boAt Type C To C Fast USB</h3>
+                            <div class="product-price-and-cart">
+                                <div class="product-price">
+                                    <h4><span class="changeColor">Rs.</span>299</h4>
+                                    <p>Rs.899</p>
+                                </div>
+                                <div class="product-cart">
+                                    <button id="cart-btn">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- switch-pages -->
+            <div class="switch-pages">
+                <button id="btn-1">1</button>
+                <button id="btn-2">2</button>
+                <button id="btn-3">3</button>
+                <!-- <i class="fa-solid fa-arrow-right-long" id="rigth-side"></i> -->
+            </div>
+        </section>
+    </main>
+
+    <section class="our-promise-main-container">
+        <div class="our-promise">
+            <div class="fast-repair our-promise-content">
+                <img src="/Assets/Images/fast-repair.png" alt="">
+                <div class="text-container">
+                    <h3>Fast Repair</h3>
+                    <p>Guaranteed quick turnaround times for all repair services.</p>
+                </div>
+            </div><!--end Fast-repair-->
+
+            <div class="secure-payment our-promise-content">
+                <img src="/Assets/Images/secure-payment.png" alt="">
+                <div class="text-container">
+                    <h3>Secure Payment</h3>
+                    <p>Ensuring safe transactions with encrypted payment gateways.</p>
+                </div>
+            </div><!--end secure-payment-->
+
+            <div class="extended-warranty our-promise-content">
+                <img src="/Assets/Images/warranty.png" alt="">
+                <div class="text-container">
+                    <h3>Extended Warranty</h3>
+                    <p>Offering a generous warranty period on all products sold.</p>
+                </div>
+            </div><!--end Extended-Warranty-->
+
+            <div class="our-promise-content">
+                <img src="/Assets/Images/24-hours-support.png" alt="">
+                <div class="text-container">
+                    <h3>24/7 Customer Support</h3>
+                    <p>Accessible online assistance for all your inquiries and concerns.</p>
+                </div>
+            </div><!--end 24/7-Customer-Support-->
+        </div>
+    </section>
+    <footer>
+        <div class="footer-logo">
+            <div id="flogo"><a href="index.html">F<span class="changeColor">S</span></a></div><!-- (FS)logo -->
+        </div><!--end footer-logo-->
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul class="footer-link-container">
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">FAQs</a></li>
+                <li><a href="">Shipping Info</a></li>
+                <li><a href="">Return Policy</a></li>
+                <li><a href="">Terms of Service</a></li>
+                <li><a href="">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="shop">
+            <h3>Shop</h3>
+            <ul class="footer-link-container">
+                <li><a href="">Best Sellers</a></li>
+                <li><a href="">New Arrivals</a></li>
+                <li> <a href="">Special Offers</a></li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <h3>Find us in social media</h3>
+            <ul class="social-media-links">
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li> <a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li> <a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h3>Contact</h3>
+            <ul class="customer-support">
+                <li><a href="">support@finalsolution.com</a></li>
+                <li><a href="">+123-456-7890</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="Shop-All.js"></script>
+    <script src="/Home Page/script.js"></script>
+    <script src="/Assets/Style & Functionality/Functionality.js"></script> <!--functionality-->
+    <script src="https://kit.fontawesome.com/fba6aba765.js" crossorigin="anonymous"></script><!--font-awesome-->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script><!--aos data-->
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
