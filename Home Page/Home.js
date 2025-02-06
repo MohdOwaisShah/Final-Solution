@@ -3,13 +3,13 @@
 const mainDisplayImagesContainer = document.querySelector(".display-images");
 // let decCount = 0;
 let count = 0;
-setInterval(() => {
-    count++;
-    mainDisplayImagesContainer.innerHTML = `<img src="/Assets/images/${count}.png" alt="products">`
-    if (count == 4) {
-        count = 0;
-    }
-}, 1500)
+// setInterval(() => {
+//     count++;
+//     mainDisplayImagesContainer.innerHTML = `<img src="/Assets/images/${count}.png" alt="products">`
+//     if (count == 4) {
+//         count = 0;
+//     }
+// }, 1500)
 
 
 //print each letters
