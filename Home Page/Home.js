@@ -5,7 +5,7 @@ const mainDisplayImagesContainer = document.querySelector(".display-images");
 let count = 0;
 setInterval(() => {
     count++;
-    mainDisplayImagesContainer.innerHTML = `<img src="/Assets/images/${count}.png" alt="products">`
+    mainDisplayImagesContainer.innerHTML = `<img src="/Assets/Images/${count}.png" alt="products">`
     if (count == 4) {
         count = 0;
     }
