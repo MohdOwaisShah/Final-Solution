@@ -1,0 +1,83 @@
+/* contact-section */
+.contact-section {
+    padding-bottom: 2rem;
+    padding-top: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+/* form-container */
+.form-container h2 {
+    font-size: 2rem;
+}
+
+.form-container form {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding-top: 2rem;
+}
+
+.form-container form input {
+    width: 16rem;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+    border: none;
+    outline: none;
+    background-color: #eeeeee;
+    border-bottom: 2px solid #575757;
+}
+
+.form-container form textarea {
+    max-height: 2rem;
+    max-width: 25rem;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+    border: none;
+    outline: none;
+    background-color: #eeeeee;
+    border-bottom: 2px solid #575757;
+    padding: 0.2rem 0.5rem;
+}
+
+.form-container form button {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #151515;
+    padding: 0.5rem;
+    border: 1.5px solid #151515;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-container form button:hover {
+    color: #eeeeee;
+    background-color: #151515;
+}
+
+.contact-image img {
+    height: 25rem;
+}
+
+
+@media(max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 600px) {
+    .form-container form {
+        width: 18rem;
+    }
+
+    .contact-image img {
+        height: 21rem;
+    }
+}

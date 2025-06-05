@@ -49,22 +49,6 @@ decreamentBtn.addEventListener("click", () => {
 })
 
 
-//display review form
-const giveReviewBtn = document.querySelector("#give-review");
-const cancelBtn = document.querySelector("#review-cancel-btn");
-const reviewForm = document.querySelector(".review-form");
-//click to open form
-giveReviewBtn.addEventListener("click", () => {
-    reviewForm.classList.remove("hide-review-form")
-    document.body.style.overflow="hidden"
-})
-
-cancelBtn.addEventListener("click", (e) => {
-    e.preventDefault()
-    reviewForm.classList.add("hide-review-form")
-    document.body.style.overflow="auto"
-})
-
 //display card cart popup
 const cardCartBtn = document.querySelectorAll(".card #cart-btn");
 const popupsContainer = document.querySelector(".pop-up-container");
@@ -116,6 +100,3 @@ cartBtn.forEach((button) => {
         },3000)
     })
 })
-
-
-//click the cart icon to show the cart page

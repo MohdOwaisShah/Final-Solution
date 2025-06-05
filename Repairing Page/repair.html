@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/fba6aba765.js" crossorigin="anonymous"></script>
+    <!-- for cart style -->
+    <link rel="stylesheet" href="/Shop-All Page/Shop-All.css">
     <!--navigation-promise-footer-(style)-->
     <link rel="stylesheet" href="/Assets/Style & Functionality/Nav-Footer-Promise.css">
     <link rel="stylesheet" href="repair.css">
@@ -13,6 +15,86 @@
 </head>
 
 <body>
+
+    <!--cart container-->
+    <div class="cart-page" id="cart-hide">
+        <div class="cart-navigation">
+            <div id="cart-logo" class="cart-page-logo"><a href="/Home Page/Home.html">F<span
+                        class="changeColor">S</span></a>
+            </div><!-- (FS)logo -->
+            <div class="three-process">
+                <div id="process-line"></div>
+                <div id="cart-process">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div id="address-process">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div id="payment-process">
+                    <i class="fa-solid fa-credit-card"></i>
+                </div>
+            </div>
+            <i class="fa-solid fa-circle-xmark" id="cart-close-icon"></i>
+        </div>
+
+        <!-- empty cart page -->
+        <div class="empty-cart-container" id="remove-empty-page">
+            <img src="/Assets/Images/empty-cart.png" alt="">
+            <div class="empty-cart-text-btn">
+                <h2>your cart is empty</h2>
+                <a href="/Shop-All Page/Shop-All.html"><button>Shop Now!</button></a>
+            </div>
+        </div>
+
+        <!-- cart product & bill container -->
+        <div class="cart-main-container">
+
+            <!-- cart product -->
+            <div class="cart-products-container">
+            </div>
+
+            <!-- cart bill container -->
+            <div class="cart-products-bill">
+                <div class="cart-bill-container">
+                    <h3>PRICE DETAILS</h3>
+                    <div class="cart-total-mrp">
+                        <h4>TOTAL MRP</h4>
+                        <h4 id="total-mrp-price">0</h4>
+                    </div>
+
+                    <div class="coupon-discount">
+                        <h4>COUPON DISC..</h4>
+                        <div class="apply-coupon">
+                            <input type="text" id="coupon-input-box">
+                            <p id="apply-button">Apply</p>
+                        </div>
+                    </div>
+
+                    <div class="gift-package">
+                        <h4>GIFT PACKAGE</h4>
+                        <h4>RS 25 <input type="checkbox"></h4>
+                    </div>
+
+                    <div class="bill-price-line"></div><!-- border -->
+
+                    <div class="cart-total-amt">
+                        <h4>TOTAL AMT</h4>
+                        <h4 id="total-amount">15000</h4>
+                    </div>
+
+                    <div class="payments-container">
+                        <img src="/Assets/Images/payment-icon/Visa.png" alt="Visa-img">
+                        <img src="/Assets/Images/payment-icon/mastercard.png" alt="Mastercard-img">
+                        <img src="/Assets/Images/payment-icon/PayPal.png" alt="PayPal-img">
+                        <img src="/Assets/Images/payment-icon/upi.png" id="upi-payment" alt="UPI-img">
+                    </div>
+
+                </div>
+                <button id="place-order-btn">PLACE ORDER</button>
+            </div>
+        </div>
+    </div>
+
     <!-- search  -->
     <div class="search-body">
         <input type="text" placeholder="Search Product" id="search-input">
@@ -22,7 +104,7 @@
             <div class="search-products">
 
                 <!-- search-product-1 -->
-                <a href="" class="search-products-link">
+                <a href="/Product Pages/Boat-smart-watch.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -40,7 +122,7 @@
                 </a>
 
                 <!-- search-product-2 -->
-                <a href="" class="search-products-link">
+                <a href="/Product Pages/Boat-speaker-1.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -59,7 +141,7 @@
                 </a>
 
                 <!-- search-product-3 -->
-                <a href="" class="search-products-link">
+                <a href="/Product Pages/samsung-earbuds-1.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -78,7 +160,7 @@
                 </a>
 
                 <!-- search-product-4 -->
-                <a href="" class="search-products-link">
+                <a href="/Product Pages/Charger.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -86,7 +168,7 @@
                         </div>
 
                         <div class="search-product-details">
-                            <h3>85w realme fast charging</h3>
+                            <h3>85w fast charging</h3>
                             <div class="search-product-price">
                                 <h4><span class="changeColor">Rs.</span>1000</h4>
                                 <p>Rs.1200</p>
@@ -97,7 +179,7 @@
                 </a>
 
                 <!-- search-product-5 -->
-                <a href="" class="search-products-link">
+                <a href="/Product Pages/Earphone-1.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -115,7 +197,7 @@
                 </a>
 
                 <!-- search-product-6 -->
-                <a href="" class="search-products-link">
+                <a href="/Product Pages/Boat-cable-2.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -134,7 +216,7 @@
                 </a>
 
                 <!-- search-product-7 -->
-                <a href="" class="search-products-link">
+                <a href="/Product Pages/Neckband-boat-1.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -153,7 +235,7 @@
                 </a>
 
                 <!-- search-product-8 -->
-                <a href="" class="search-products-link">
+                <a href="/Product Pages/Realme-earbuds-1.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -172,7 +254,7 @@
                 </a>
 
                 <!-- search-product-9 -->
-                <a href="" class="search-products-link">
+                <a href="/Product Pages/Fire-boltt-smart-watch-1.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -190,7 +272,7 @@
                 </a>
 
                 <!-- search-product-10 -->
-                <a href="" class="search-products-link">
+                <a href="/Product Pages/Boat-speaker-2.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -209,7 +291,7 @@
                 </a>
 
                 <!-- search-product-11 -->
-                <a href="" class="search-products-link">
+                <a href="/Product Pages/Boat-cable-1.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -228,7 +310,7 @@
                 </a>
 
                 <!-- search-product-12 -->
-                <a href="" class="search-products-link">
+                <a href="/Product Pages/UA-neckband-2.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -247,7 +329,7 @@
                 </a>
 
                 <!-- search-product-13 -->
-                <a href="" class="search-products-link">
+                <a href="/Product Pages/Boat-earbuds-1.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -265,7 +347,7 @@
                 </a>
 
                 <!-- search-product-14 -->
-                <a href="" class="search-products-link">
+                <a href="/Product Pages/OnePlus-neckband-1.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -285,26 +367,7 @@
                 </a>
 
                 <!-- search-product-15 -->
-                <a href="" class="search-products-link">
-                    <div class="search-product">
-                        <!-- search-product-image -->
-                        <div class="search-product-image-container">
-                            <img src="/Assets/products-images/84w-charger.png" class="search-product-img" alt="">
-                        </div>
-
-                        <div class="search-product-details">
-                            <h3>85W Mi Fast Charging</h3>
-                            <div class="search-product-price">
-                                <h4><span class="changeColor">Rs.</span>1000</h4>
-                                <p>Rs.1200</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </a>
-
-                <!-- search-product-16 -->
-                <a href="" class="search-products-link">
+                <a href="/Product Pages/Earphone-2.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -322,27 +385,8 @@
                     </div>
                 </a>
 
-                <!-- search-product-17 -->
-                <a href="" class="search-products-link">
-                    <div class="search-product">
-                        <!-- search-product-image -->
-                        <div class="search-product-image-container">
-                            <img src="/Assets/products-images/84w-charger.png" class="search-product-img" alt="">
-                        </div>
-
-                        <div class="search-product-details">
-                            <h3>85W Oppo Fast Charging</h3>
-                            <div class="search-product-price">
-                                <h4><span class="changeColor">Rs.</span>1000</h4>
-                                <p>Rs.1200</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </a>
-
-                <!-- search-product-18 -->
-                <a href="" class="search-products-link">
+                <!-- search-product-16 -->
+                <a href="/Product Pages/Neckband-boat-4.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -359,8 +403,8 @@
                     </div>
                 </a>
 
-                <!-- search-product-19 -->
-                <a href="" class="search-products-link">
+                <!-- search-product-17 -->
+                <a href="/Product Pages/Jbl-speaker-1.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -378,8 +422,8 @@
                     </div>
                 </a>
 
-                <!-- search-product-20 -->
-                <a href="" class="search-products-link">
+                <!-- search-product-18 -->
+                <a href="/Product Pages/OnePlus-earbuds-1.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -397,8 +441,8 @@
                     </div>
                 </a>
 
-                <!-- search-product-21 -->
-                <a href="" class="search-products-link">
+                <!-- search-product-19 -->
+                <a href="/Product Pages/UA-neckband-1.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -416,45 +460,8 @@
                     </div>
                 </a>
 
-                <!-- search-product-22 -->
-                <a href="" class="search-products-link">
-                    <div class="search-product">
-                        <!-- search-product-image -->
-                        <div class="search-product-image-container">
-                            <img src="/Assets/products-images/84w-charger.png" class="search-product-img" alt="">
-                        </div>
-
-                        <div class="search-product-details">
-                            <h3>85W Samsung Fast Charging</h3>
-                            <div class="search-product-price">
-                                <h4><span class="changeColor">Rs.</span>1000</h4>
-                                <p>Rs.1200</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- search-product-23 -->
-                <a href="" class="search-products-link">
-                    <div class="search-product">
-                        <!-- search-product-image -->
-                        <div class="search-product-image-container">
-                            <img src="/Assets/products-images/smart-watch-3.png" class="search-product-img" alt="">
-                        </div>
-
-                        <div class="search-product-details">
-                            <h3>Noise Vortex Plus 1.46 Amoled</h3>
-                            <div class="search-product-price">
-                                <h4><span class="changeColor">Rs.</span>2199</h4>
-                                <p>Rs.6999</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </a>
-
-                <!-- search-product-24 -->
-                <a href="" class="search-products-link">
+                <!-- search-product-20 -->
+                <a href="/Product Pages/Boat-cable-3.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -472,8 +479,8 @@
                     </div>
                 </a>
 
-                <!-- search-product-25 -->
-                <a href="" class="search-products-link">
+                <!-- search-product-21 -->
+                <a href="/Product Pages/Neckband-boat-5.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -491,8 +498,8 @@
                     </div>
                 </a>
 
-                <!-- search-product-26 -->
-                <a href="" class="search-products-link">
+                <!-- search-product-22 -->
+                <a href="/Product Pages/Boat-earbuds-3.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -509,8 +516,8 @@
                     </div>
                 </a>
 
-                <!-- search-product-27 -->
-                <a href="" class="search-products-link">
+                <!-- search-product-23 -->
+                <a href="/Product Pages/Neckband-boat-3.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -528,8 +535,8 @@
                     </div>
                 </a>
 
-                <!-- search-product-28 -->
-                <a href="" class="search-products-link">
+                <!-- search-product-24 -->
+                <a href="/Product Pages/Neckband-boat-2.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -547,8 +554,8 @@
                     </div>
                 </a>
 
-                <!-- search-product-29 -->
-                <a href="" class="search-products-link">
+                <!-- search-product-25 -->
+                <a href="/Product Pages/Boat-earbuds-2.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -566,8 +573,8 @@
                     </div>
                 </a>
 
-                <!-- search-product-30 -->
-                <a href="" class="search-products-link">
+                <!-- search-product-26 -->
+                <a href="/Product Pages/OnePlus-neckband-2.html" class="search-products-link">
                     <div class="search-product">
                         <!-- search-product-image -->
                         <div class="search-product-image-container">
@@ -594,33 +601,34 @@
         <div id="logo"><a href="/Home Page/Home.html">F<span class="changeColor">S</span></a></div><!-- (FS)logo -->
         <!-- navigation-links & add to card -->
         <div class="navigation active">
-            <li> <!-- id="drop-down-main"-->
+            <li class="mobile-accessories-main-container"> <!-- id="drop-down-main"-->
                 <label id="mobile-accessories">Mobile accessories <i
                         class="fa-solid fa-angle-down down-arrow-res"></i></label>
                 <label id="responsive-mobile-accessories">Mobile accessories <i
                         class="fa-solid fa-angle-down down-arrow-res"></i> </label>
                 <ul class="list-of-accessories responsive-list-of-accessories">
-                    <li><a class="name-of-accessories" href="google.com"><img src="/Assets/Images/charger.png" alt=""
-                                class="img-height"> Charger</a></li>
-                    <li><a class="name-of-accessories"><img src="/Assets/Images/cable.png" alt="amazone.in"
-                                class="img-height"> Data cable</a></li>
-                    <li><a class="name-of-accessories"><img src="/Assets/Images/wire-earphone.png" alt=""
-                                class="img-height">Wire Earphone</a></li>
-                    <li><a class="name-of-accessories"><img src="/Assets/Images/neckband.png" alt=""
-                                style="height: 4vmax;" id="neckband-img">Neckband</a></li>
-                    <li><a class="name-of-accessories"><img src="/Assets/Images/earbuds.png" alt=""
-                                class="img-height">Earbuds</a></li>
-                    <li><a class="name-of-accessories"><img src="/Assets/Images/4.png" alt=""
-                                class="img-height">Speaker</a></li>
+                    <li><a class="name-of-accessories" href="/Categories Products/Chargers.html">
+                            <img src="/Assets/Images/charger.png" alt="" class="img-height"> Charger</a></li>
+                    <li><a class="name-of-accessories" href="/Categories Products/Cables.html"><img
+                                src="/Assets/Images/cable.png" alt="cables" class="img-height"> Data cable</a></li>
+                    <li><a class="name-of-accessories" href="/Categories Products/Earphones.html"><img
+                                src="/Assets/Images/wire-earphone.png" alt="" class="img-height">Wire Earphone</a></li>
+                    <li><a class="name-of-accessories" href="/Categories Products/Neckbands.html"><img
+                                src="/Assets/Images/neckband.png" alt="" style="height: 3.2rem;"
+                                id="neckband-img">Neckband</a></li>
+                    <li><a class="name-of-accessories" href="/Categories Products/Earbuds.html"><img
+                                src="/Assets/Images/earbuds.png" alt="" class="img-height">Earbuds</a></li>
+                    <li><a class="name-of-accessories" href="/Categories Products/Speakers.html"><img
+                                src="/Assets/Images/4.png" alt="" class="img-height">Speaker</a></li>
                 </ul><!--end list-of-accessories-->
             </li>
             <li><a href="/Repairing Page/repair.html" class="each-nav-style">Repairing</a></li>
             <li><a href="/Shop-All Page/Shop-All.html" class="each-nav-style">Shop All</a></li>
-            <li><a href="" class="each-nav-style">Contact</a></li>
+            <li><a href="/Contact Page/Contact.html" class="each-nav-style">Contact</a></li>
         </div><!--end navigation-->
         <div class="another-navigation">
             <i class="fa-solid fa-magnifying-glass" id="search"></i>
-            <button id="sign-in">Sign in</button>
+            <a href="/SignIn-SignUp/SignIn-SignUp.html"><button id="sign-in">Sign in</button></a>
             <div class="cart-container">
                 <i class="fa-solid fa-cart-shopping" id="shop-cart">
                 </i>
@@ -629,6 +637,7 @@
             <i class="fa-solid fa-bars" id="menu"></i>
         </div>
     </nav>
+
     <main>
         <!-- repair-section-1 -->
         <section class="repair-section-1">
@@ -647,26 +656,32 @@
         <!-- repair-section-2 -->
         <section class="repair-section-2">
             <div class="left-repair-cont">
-                <img src="/Assets/Images/repairing-vector.png" alt="" data-aos="fade-right">
+                <img src="/Assets/Images/repairing-vector.png">
             </div>
             <div class="right-repair-cont">
-                <form action="" data-aos="fade-left">
+                <form id="repairForm">
                     <h2>report your problem</h2>
                     <div class="main-form">
-                        <label for="" class="form-text">Name</label>
-                        <input type="text" class="input-text">
-                        <label for="" class="form-text">email/mobile</label>
-                        <input type="text" class="input-text">
-                        <label for="" class="form-text">Device model</label>
-                        <input type="text" class="input-text">
-                        <label for="" class="form-text">Whats your problem</label>
-                        <textarea class="message-text"></textarea>
-                        <button class="submit-btn">Sumbit</button>
+                        <label class="form-text">Name</label>
+                        <input type="text" class="input-text" name="name" required>
+
+                        <label class="form-text">Email/Mobile</label>
+                        <input type="text" class="input-text" name="contact" required>
+
+                        <label class="form-text">Device Model</label>
+                        <input type="text" class="input-text" name="device" required>
+
+                        <label class="form-text">What's your problem?</label>
+                        <textarea class="message-text" name="problem" required></textarea>
+
+                        <button type="submit" class="submit-btn">Submit</button>
                     </div>
                 </form>
+                <div id="messageBox"></div>
+
             </div>
         </section>
-        
+
     </main>
     <!-- our-promise -->
     <section class="our-promise-main-container">
@@ -705,46 +720,49 @@
         </div>
     </section>
     <footer>
-        <div class="footer-logo">
-            <div id="flogo"><a href="index.html">F<span class="changeColor">S</span></a></div><!-- (FS)logo -->
-        </div><!--end footer-logo-->
-        <div class="quick-links">
-            <h3>Quick Links</h3>
-            <ul class="footer-link-container">
-                <li><a href="">About Us</a></li>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">FAQs</a></li>
-                <li><a href="">Shipping Info</a></li>
-                <li><a href="">Return Policy</a></li>
-                <li><a href="">Terms of Service</a></li>
-                <li><a href="">Privacy Policy</a></li>
-            </ul>
-        </div>
-        <div class="shop">
-            <h3>Shop</h3>
-            <ul class="footer-link-container">
-                <li><a href="">Best Sellers</a></li>
-                <li><a href="">New Arrivals</a></li>
-                <li> <a href="">Special Offers</a></li>
-            </ul>
-        </div>
-        <div class="social-media">
-            <h3>Find us in social media</h3>
-            <ul class="social-media-links">
-                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
-                <li> <a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                <li> <a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-            </ul>
-        </div>
-        <div class="contact">
-            <h3>Contact</h3>
-            <ul class="customer-support">
-                <li><a href="">support@finalsolution.com</a></li>
-                <li><a href="">+123-456-7890</a></li>
-            </ul>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <div id="flogo"><a href="index.html">F<span class="changeColor">S</span></a></div><!-- (FS)logo -->
+            </div><!--end footer-logo-->
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul class="footer-link-container">
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Shipping Info</a></li>
+                    <li><a href="">Return Policy</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="shop">
+                <h3>Shop</h3>
+                <ul class="footer-link-container">
+                    <li><a href="">Best Sellers</a></li>
+                    <li><a href="">New Arrivals</a></li>
+                    <li> <a href="">Special Offers</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <h3>Find us in social media</h3>
+                <ul class="social-media-links">
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li> <a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li> <a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <ul class="customer-support">
+                    <li><a href="">support@finalsolution.com</a></li>
+                    <li><a href="">+123-456-7890</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
+    <script src="Repair.js"></script>
     <script src="/Assets/Style & Functionality/Functionality.js"></script> <!--functionality-->
     <!-- aos data -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

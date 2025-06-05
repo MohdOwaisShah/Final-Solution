@@ -37,17 +37,17 @@ main {
 }
 
 .cart-products-container {
-    height: 80vh;
-    width: 50%;
+    height: 28rem;
+    width: 35rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4vmax;
+    gap: 2rem;
     overflow: auto;
 }
 
 .cart-product-image img {
-    height: 7vmax;
+    height: 6rem;
 }
 
 .cart-product {
@@ -58,7 +58,7 @@ main {
 }
 
 .cart-product-details h2 {
-    font-size: 1.2vmax;
+    font-size: 0.86rem;
 }
 
 .cart-product-name-price {
@@ -66,12 +66,12 @@ main {
 }
 
 .cart-product-name-price h2 {
-    width: 15vmax;
+    width: 10rem;
 }
 
 .cart-product-name-price h3 {
     font-weight: 545;
-    font-size: 1vmax;
+    font-size: 0.8rem;
 }
 
 .cart-product-name-price .only-price {
@@ -79,21 +79,10 @@ main {
 }
 
 
-.product-quantity-btn {
-    margin-top: 0.6vmax;
-    display: flex;
-}
 
-.product-quantity-btn button {
-    width: 2.2vmax;
-    height: 1.9vmax;
-    font-size: 1.2vmax;
-    font-weight: 500;
-    color: #565656;
-    box-sizing: border-box;
-    border: 0.5px solid #565656;
-    cursor: pointer;
-    transition: all 0.2s ease;
+.product-quantity-btn {
+    margin-top: 0.6rem;
+    display: flex;
 }
 
 .product-quantity-btn button:hover {
@@ -111,12 +100,10 @@ main {
 }
 
 .number-of-quantity {
-    width: 2.2vmax;
-    height: 1.9vmax;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2vmax;
+    font-size: 0.9rem;
     box-sizing: border-box;
     border-top: 0.5px solid #565656;
     border-bottom: 0.5px solid #565656;
@@ -127,11 +114,11 @@ main {
 }
 
 .trash-icon {
-    font-size: 1.3vmax;
+    font-size: 1rem;
     cursor: pointer;
     position: absolute;
-    left: 18vmax;
-    top: 4.6vmax;
+    left: 14.5rem;
+    top: 3.5rem;
 }
 
 .cart-product-border {
@@ -159,44 +146,41 @@ main {
 }
 
 .cart-navigation {
-    height: 10vh;
+    height: 4rem;
     width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 26vw;
-}
-
-.cart-page-logo {
-    margin-left: 0.8em;
+    gap: 20rem;
 }
 
 .three-process {
     display: flex;
-    gap: 15vmax;
+    gap: 11rem;
     position: relative;
     align-items: center;
-    height: 0.2vmax;
+    height: 0.2rem;
     background-color: #A0A0A0;
 }
 
 #cart-close-icon {
-    font-size: 2vw;
+    font-size: 2rem;
     cursor: pointer;
     color: #979797;
 }
 
 #process-line {
     position: absolute;
-    width: 1vmax;
-    height: 0.3vmax;
+    width: 0rem;
+    height: 0.3rem;
     background-color: blue;
     z-index: 2;
 }
 
 .three-process i {
-    font-size: 1.5vmax;
-    height: 3.1vmax;
-    width: 3.1vmax;
+    font-size: 1.4rem;
+    height: 3rem;
+    width: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -215,26 +199,26 @@ main {
 }
 
 .empty-cart-container {
-    height: 90vh;
+    height: 31rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 9vw;
+    gap: 5rem;
 }
 
 .empty-cart-container img {
-    height: 25vmax;
+    height: 22rem;
 }
 
 .empty-cart-text-btn {
     display: flex;
     flex-direction: column;
-    gap: 2vw;
+    gap: 1rem;
 }
 
 .empty-cart-text-btn h2 {
-    font-size: 2vmax;
+    font-size: 1.7rem;
     color: #A91D3A;
     text-transform: uppercase;
 }
@@ -247,8 +231,9 @@ main {
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 750;
-    font-size: 1vmax;
-    padding: 0.5vmax 3vmax;
+    font-size: 1rem;
+    width: 10rem;
+    padding: 0.8rem 1rem;
     border-radius: 3px;
     background-color: #A91D3A;
     color: #EEEEEE;
@@ -261,31 +246,31 @@ main {
 }
 
 .cart-products-bill {
-    height: 90vh;
+    height: 39rem;
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 1.3vmax;
+    gap: 1rem;
 }
 
 .cart-bill-container {
     background-color: #FFFFFF;
-    height: 22vmax;
-    width: 22vmax;
+    height: 18rem;
+    width: 18rem;
     position: relative;
     border-left: 2px solid #A91D3A;
 }
 
 .cart-bill-container h3 {
     color: #A91D3A;
-    margin: 1.5vmax 0vmax 2.5vmax 1.5vmax;
-    font-size: 1.2vmax;
+    margin: 1.1rem 0rem 2.1rem 1.1rem;
+    font-size: 1rem;
 }
 
 .cart-bill-container h4 {
-    font-size: 1vmax;
+    font-size: 0.8rem;
     color: #5C5C5C;
     font-weight: 500;
 }
@@ -293,31 +278,31 @@ main {
 .cart-total-mrp {
     width: 100%;
     display: flex;
-    gap: 4vmax;
-    margin-left: 1.5vmax;
+    gap: 3rem;
+    margin-left: 1.1rem;
 }
 
-#total-mrp-price::before{
+#total-mrp-price::before {
     content: "RS ";
 }
 
 .coupon-discount {
     width: 100%;
     display: flex;
-    gap: 3vmax;
-    margin: 2vmax 0vmax 2vmax 1.5vmax;
+    gap: 2rem;
+    margin: 1.8rem 0rem 1.8rem 1.1rem;
     align-items: center;
 }
 
 .apply-coupon {
     display: flex;
     align-items: center;
-    gap: 0.5vmax;
+    gap: 0.4rem;
 }
 
 .apply-coupon input {
-    width: 4vmax;
-    padding: 0.2vmax;
+    width: 3rem;
+    padding: 0.2rem;
     outline: none;
     border: 1px solid #A91D3A;
     border-radius: 5px;
@@ -326,7 +311,7 @@ main {
 }
 
 .apply-coupon p {
-    font-size: 0.9vmax;
+    font-size: 0.7rem;
     color: #A91D3A;
     cursor: pointer;
 }
@@ -334,8 +319,8 @@ main {
 .gift-package {
     width: 100%;
     display: flex;
-    gap: 3vmax;
-    margin: 1vmax 0vmax 1vmax 1.5vmax;
+    gap: 2rem;
+    margin: 1rem 0rem 1rem 1.1rem;
     align-items: center;
 }
 
@@ -348,22 +333,22 @@ main {
 }
 
 .bill-price-line {
-    width: 20vmax;
-    height: 0.02vmax;
+    width: 16.4rem;
+    height: 0.01rem;
     background-color: #BFBFBF;
     position: absolute;
     left: 13px;
-    margin-top: 1vmax;
+    margin-top: 0.7rem 11.2px;
 }
 
 .cart-total-amt {
     width: 100%;
     display: flex;
-    gap: 5vmax;
-    margin: 3vmax 0vmax 1vmax 1.5vmax;
+    gap: 3rem;
+    margin: 2.4rem 0rem 0.6rem 2rem;
 }
 
-#total-amount::before{
+#total-amount::before {
     content: "RS ";
 }
 
@@ -371,22 +356,23 @@ main {
     width: 100%;
     display: flex;
     align-items: center;
-    margin-left: 8vmax;
+    margin-left: 7rem;
 }
 
 .payments-container img {
-    height: 2.5vmax;
+    height: 2rem;
 }
 
 #upi-payment {
-    height: 3.2vmax;
-    margin-left: 0.1vmax;
+    height: 2.5rem;
+    margin-left: 0.1rem;
 }
 
 #place-order-btn {
-    font-size: 1vmax;
+    font-size: 1rem;
     font-weight: 700;
-    padding: 1vmax 7.2vmax;
+    width: 18rem;
+    padding: 0.7rem 5.23rem;
     cursor: pointer;
     border-radius: 5px;
     color: #EEEEEE;
@@ -399,320 +385,14 @@ main {
     background-color: #731225;
 }
 
-/* responsive */
-@media(max-width: 768px) {
-    .cart-page {
-        overflow: auto;
-    }
-
-    .cart-navigation {
-        gap: 20vw;
-    }
-
-    .three-process i {
-        font-size: 2.5vw;
-        height: 5vw;
-        width: 5vw;
-    }
-
-    .cart-main-container {
-        flex-direction: column;
-        height: auto;
-    }
-
-    #cart-close-icon {
-        font-size: 4vw;
-    }
-
-    /* cart products */
-    .cart-products-container {
-        height: 60vh;
-        margin-top: 2vh;
-    }
-
-
-    .cart-product-image img {
-        height: 10vw;
-    }
-
-    .cart-product-name-price h2 {
-        width: 24vw;
-    }
-
-    .cart-product-details h2 {
-        font-size: 1.7vw;
-    }
-
-    .cart-product-name-price h3 {
-        font-size: 1.6vw;
-    }
-
-    .trash-icon {
-        font-size: 1.7vw;
-        left: 25vw;
-        top: 6.8vw;
-    }
-
-    .product-quantity-btn button {
-        width: 3vw;
-        height: 3vw;
-        font-size: 2vw;
-    }
-
-    .number-of-quantity {
-        width: 3vw;
-        height: 3vw;
-        font-size: 2vw;
-    }
-
-    .cart-product-border {
-        width: 30vw;
-    }
-
-    /* product bill */
-    .cart-products-bill {
-        height: auto;
-        margin-bottom: 3vw;
-        padding-top: 2vw;
-    }
-
-    .cart-bill-container {
-        height: 37vw;
-        width: 34vw;
-    }
-
-    .cart-bill-container h3 {
-        font-size: 2.5vw;
-        margin: 2vw 0vw 5vw 2.5vw;
-    }
-
-    .cart-bill-container h4 {
-        font-size: 1.8vw;
-    }
-
-    .apply-coupon p {
-        font-size: 1.4vw;
-    }
-
-    .payments-container {
-        margin-left: 11vw;
-    }
-
-    .payments-container img {
-        height: 4vw;
-    }
-
-    #upi-payment {
-        height: 5vw;
-    }
-
-    .cart-total-mrp {
-        margin-left: 2.5vw;
-    }
-
-    .coupon-discount {
-        margin: 2.5vw 0vw 2.5vw 2.5vw;
-    }
-
-    .apply-coupon input {
-        width: 6vw;
-    }
-
-    .gift-package {
-        margin: 2.5vw 0vw 2.5vw 2.5vw;
-    }
-
-    .cart-total-amt {
-        margin: 5vw 0vw 2.5vw 2.5vw;
-    }
-
-    #place-order-btn {
-        font-size: 2vw;
-        padding: 1vw 9.5vw;
-    }
-
-    .bill-price-line {
-        width: 30vw;
-    }
-
-}
-
-@media(max-width: 426px) {
-    
-    /* cart-page */
-    .cart-navigation {
-        gap: 8vw;
-    }
-
-    .empty-cart-container {
-        flex-direction: column;
-    }
-
-    .empty-cart-container img {
-        height: 50vw;
-    }
-
-    .three-process i {
-        font-size: 3.5vw;
-        height: 6.1vw;
-        width: 6.1vw;
-    }
-
-    .empty-cart-text-btn {
-        align-items: center;
-        gap: 5vw;
-    }
-
-    .empty-cart-text-btn h2 {
-        font-size: 5vw;
-    }
-
-    .empty-cart-text-btn a {
-        width: 62%;
-    }
-
-    .empty-cart-text-btn button {
-        font-size: 3vw;
-        padding: 1.5vw 8vw;
-    }
-
-    .three-process i {
-        font-size: 3.2vw;
-        height: 6vw;
-        width: 6vw;
-    }
-
-    .cart-main-container {
-        flex-direction: column;
-        height: auto;
-    }
-
-    #cart-close-icon {
-        font-size: 4vw;
-    }
-
-    /* cart products */
-    
-    .cart-products-container{
-        width: 80%;
-    }
-
-    .cart-product {
-        gap: 4vw;
-    }
-
-    .cart-product-image img {
-        height: 18vw;
-    }
-
-    .cart-product-name-price h2 {
-        width: 33vw;
-    }
-
-    .cart-product-details h2 {
-        font-size: 3vw;
-    }
-
-    .cart-product-name-price h3 {
-        font-size: 2.6vw;
-    }
-
-    .trash-icon {
-        font-size: 3vw;
-        left: 43vw;
-        top: 11.8vw;
-    }
-
-    .product-quantity-btn button {
-        width: 5vw;
-        height: 5vw;
-        font-size: 4vw;
-    }
-
-    .number-of-quantity {
-        width: 5vw;
-        height: 5vw;
-        font-size: 3vw;
-    }
-
-    .cart-product-border {
-        width: 44vw;
-    }
-
-    #cart-close-icon {
-        font-size: 5vw;
-    }
-
-    /* product bill */
-    .cart-products-bill {
-        height: auto;
-        margin-bottom: 3vw;
-        padding-top: 2vw;
-    }
-
-    .cart-bill-container {
-        height: 56vw;
-        width: 54vw;
-    }
-
-    .cart-bill-container h3 {
-        font-size: 3.5vw;
-        margin: 4vw 0vw 7vw 5vw;
-    }
-
-    .cart-bill-container h4 {
-        font-size: 3vw;
-    }
-
-    .apply-coupon p {
-        font-size: 2.4vw;
-    }
-
-    .payments-container {
-        margin-left: 20vw;
-    }
-
-    .payments-container img {
-        height: 6vw;
-    }
-
-    #upi-payment {
-        height: 7.2vw;
-    }
-
-    .cart-total-mrp {
-        margin-left: 5vw;
-    }
-
-    .coupon-discount {
-        margin: 4.5vw 0vw 4.5vw 5vw;
-    }
-
-    .apply-coupon input {
-        width: 9vw;
-    }
-
-    .gift-package {
-        margin: 2.5vw 0vw 2.5vw 5vw;
-    }
-
-    .cart-total-amt {
-        margin: 7vw 0vw 1.5vw 5vw;
-    }
-
-    #place-order-btn {
-        font-size: 2.5vw;
-        padding: 1.5vw;
-        width: 54vw;
-    }
-
-    .bill-price-line {
-        width: 47vw;
-    }
+#cart-logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #151515;
 }
 
 
-/* cart-page <end>*/
+
 
 /* add to cart popup */
 .pop-up {
@@ -744,32 +424,39 @@ main {
 
 /*.shop-all-heading <start>*/
 .shop-all-heading {
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .shop-all-heading h1 {
-    font-size: 1.4vmax;
-    width: 10%;
+    font-size: 2rem;
     text-align: center;
-    padding: 3px 17px;
-    color: #A91D3A;
-    border: 1px solid #151515;
+    color: var(--dark-color);
 }
 
 /*.shop-all-heading <end>*/
 
 /*.filter-price-container <start>*/
 
+.filter-main-contaner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-price-container {
+    width: 68rem;
+}
+
 .filter-price-container h4 {
     display: inline-block;
-    font-size: 1vmax;
+    font-size: 0.9rem;
     font-weight: 400;
-    margin-left: 13vw;
-    margin-bottom: 2vh;
+    margin-bottom: 1rem;
+    margin-left: 0.9rem;
     color: #151515;
     cursor: pointer;
     background-color: #EEEEEE;
@@ -786,7 +473,7 @@ main {
 }
 
 .filter-price-container h4 i {
-    font-size: 1vmax;
+    font-size: 1rem;
     color: #151515;
 }
 
@@ -797,7 +484,7 @@ main {
     border-radius: 3px;
     cursor: pointer;
     outline: none;
-    font-size: 1vmax;
+    font-size: 0.8rem;
     padding: 2.5px 5px;
     margin-left: 3px;
     transform: translateX(-7.5em);
@@ -828,20 +515,27 @@ main {
     display: none;
 }
 
-/*.shop-cards-container <start>*/
-.shop-cards-container {
-    width: 100%;
+/*.products-main-container <start>*/
+
+.products-main-container {
     display: flex;
-    gap: 11vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-cards-container {
+    width: 68rem;
+    display: flex;
+    gap: 3rem;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .card {
-    height: 100%;
-    width: 17vmax;
-    border: 2px solid #151515;
-    border-radius: 15px;
+    height: 16.5rem;
+    width: 14rem;
+    border: 0.009rem solid #151515;
+    border-radius: 0.7rem;
     background-color: #EEEEEE;
     transition: filter 0.3s ease;
 }
@@ -858,7 +552,7 @@ main {
 
 .company-name h3 {
     font-weight: 500;
-    font-size: 1vmax;
+    font-size: 0.8rem;
 }
 
 .product-image {
@@ -867,49 +561,40 @@ main {
 }
 
 .charger-img {
-    height: 11vmax;
-    padding: 2vmax;
+    height: 9rem;
+    padding: 1.5rem;
     transition: all 1s ease;
 }
 
 .wire-earphone-img {
-    margin-top: 1.7vmax;
-    height: 10vmax;
-    padding-bottom: 3.3vmax;
+    margin-top: 1.1rem;
+    height: 9.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .neckband-speaker-img {
-    margin-top: 1.7vmax;
-    height: 12vmax;
-    padding-bottom: 1.5vmax;
+    margin-top: 1rem;
+    height: 10rem;
+    padding-bottom: 1.2rem;
 }
 
 .UA-neckband-1 {
-    height: 14vmax;
-    padding: 0.6vmax;
+    height: 12rem;
     margin-top: 0;
 }
 
 .earbuds-smartWatch-cable-img {
-    height: 13vmax;
-    margin: 1vmax 0;
+    height: 10rem;
+    margin: 1rem 0;
 }
 
 .product-details h3 {
-    font-size: 1.1vmax;
-    margin-left: 10px;
+    font-size: 0.9rem;
+    margin-left: 0.59rem;
     font-weight: 500;
 }
 
-.product-price-and-cart {
-    display: flex;
-    gap: 2.5vmax;
-    margin-top: 0.4vmax;
-    padding-bottom: 1vmax;
-
-}
-
-.product-price-and-cart .product-price {
+.product-price {
     display: flex;
     gap: 6px;
     margin-left: 10px;
@@ -919,50 +604,30 @@ main {
 
 .product-price h4 {
     color: #151515;
-    font-size: 1.1vmax;
+    font-size: 1rem;
     font-weight: 500;
 }
 
 .product-price p {
-    font-size: 0.8vmax;
+    font-size: 0.7rem;
     text-decoration: line-through;
-    margin-top: 0.2vmax;
+    margin-top: 0.1rem;
 }
 
-.product-cart button {
-    font-size: 0.8vmax;
-    color: #EEEEEE;
-    background-color: #151515;
-    border: 1px solid #151515;
-    height: 1.5vmax;
-    width: 5.5vmax;
-    border-radius: 15px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.product-cart button:hover {
-    color: #EEEEEE;
-    background-color: #A91D3A;
-    border: 1px solid #A91D3A;
-}
-
-/*.shop-cards-container <end>*/
 
 /*switch-pages <start>*/
 .switch-pages {
     width: 100%;
-    height: 30vh;
+    height: 9rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3vmax;
+    gap: 2rem;
 
 }
 
 .switch-pages button {
-    font-size: 1.3vmax;
+    font-size: 1rem;
     padding: 5px 10px;
     background-color: transparent;
     border: none;
@@ -989,197 +654,7 @@ main {
 
 /*main <end>*/
 
-@media(max-width: 1024px) {
-    .card {
-        height: 22vmax;
-    }
 
-    #filter-prices {
-        transform: translateX(-8.5em);
-    }
-}
-
-@media(max-width: 768px) {
-
-    /*cart-page*/
-    .empty-cart-text-btn button {
-        font-size: 1.2vmax;
-        padding: 0.8vmax 3vmax;
-    }
-
-    .empty-cart-text-btn a {
-        width: 13.1vw;
-    }
-
-
-    /*shop-all-heading*/
-    .shop-all-heading h1 {
-        font-size: 3vw;
-        width: 21%;
-    }
-
-    /* filter-price-container */
-    .filter-price-container h4 {
-        font-size: 2.3vw;
-    }
-
-    .filter-price-container h4 i {
-        font-size: 2.3vw;
-    }
-
-    #filter-prices {
-        font-size: 2vmax;
-        padding: 2.9px 6px;
-    }
-
-    /*shop-cards-container*/
-    .shop-cards-container {
-        gap: 10vw;
-    }
-
-    .card {
-        height: 40vw;
-        width: 30.5vw;
-    }
-
-    .company-name h3 {
-        font-size: 2vw;
-    }
-
-    /* img-height */
-    .charger-img {
-        padding: 2.5vw 0 1vw 0;
-        height: 20vw;
-    }
-
-    .wire-earphone-img {
-        height: 18vw;
-        padding: 0;
-    }
-
-    .neckband-speaker-img {
-        height: 20vw;
-        margin: 0;
-    }
-
-    .UA-neckband-1 {
-        height: 23vw;
-    }
-
-    .earbuds-smartWatch-cable-img {
-        height: 20vw;
-    }
-
-    /* font-size */
-    .product-details h3 {
-        font-size: 2.2vw;
-    }
-
-    .product-price h4 {
-        font-size: 2.3vw;
-    }
-
-    .product-price p {
-        font-size: 1.6vw;
-    }
-
-    .product-cart button {
-        font-size: 1.4vw;
-        height: 3vw;
-        width: 9vw;
-    }
-
-    .product-details {
-        margin-top: 4vw;
-    }
-
-    /* switch-pages */
-    .switch-pages button {
-        font-size: 3vw;
-    }
-}
-
-@media(max-width: 600px) {
-    .card {
-        height: 50vw;
-        width: 35.5vw;
-        border: 1px solid #151515;
-    }
-
-    .company-name h3 {
-        font-size: 2vw;
-    }
-
-    /* img-height */
-    .charger-img {
-        height: 25vw;
-    }
-
-    .wire-earphone-img {
-        height: 25vw;
-    }
-
-    .neckband-speaker-img {
-        height: 26vw;
-    }
-
-    .earbuds-smartWatch-cable-img {
-        /* height: 20vw; */
-        margin: 4vw 0;
-    }
-
-    .UA-neckband-1 {
-        height: 27vw;
-    }
-
-    /* font-size */
-    .product-details h3 {
-        font-size: 2.5vw;
-        width: 100%;
-    }
-
-    .product-price h4 {
-        font-size: 2.7vw;
-    }
-
-    .product-price p {
-        font-size: 2vw;
-    }
-
-    .product-cart button {
-        font-size: 2vw;
-        height: 4vw;
-        width: 15vw;
-    }
-
-    .product-details {
-        margin-top: 0;
-    }
-
-    .wire-earphone-img {
-        padding-bottom: 2vw;
-
-    }
-
-    .earbuds-smartWatch-cable-img {
-        height: 24vw;
-        margin: 2vw 0;
-    }
-
-    .neckband-speaker-img {
-        margin-top: 0;
-    }
-
-    .product-price-and-cart {
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .product-price-and-cart button {
-        margin: 2.5vw 2vw;
-    }
-
-}
 
 @media(max-width: 426px) {
     .pop-up {
@@ -1197,73 +672,92 @@ main {
     }
 }
 
-@media(max-width: 467px) {
 
-    /* shop-all-heading */
-    .shop-all-heading h1 {
-        font-size: 4vw;
-        width: 40%;
-        margin-bottom: 12vw;
+
+
+/* responsive */
+@media(max-width: 768px) {
+
+
+    .related-products h2 {
+        width: 18rem;
     }
 
-    /* filter-price-container */
-    .filter-price-container h4 {
-        font-size: 3vw;
-        margin-left: 9vw;
+    .empty-cart-container {
+        flex-direction: column;
     }
 
-    .filter-price-container h4 i {
-        font-size: 3vw;
+    .cart-page {
+        overflow: auto;
     }
 
-    /*shop-all-heading*/
-    .card {
-        height: 53vw;
-        width: 37.5vw;
+    .cart-navigation {
+        gap: 4rem;
     }
 
-    .company-name h3 {
-        font-size: 2.5vw;
+    .three-process i {
+        font-size: 1rem;
+        height: 2rem;
+        width: 2rem;
     }
 
-    .product-details h3 {
-        font-size: 2.8vw;
-        width: 90%;
+    .cart-main-container {
+        flex-direction: column;
+        height: auto;
     }
 
-    .product-price-and-cart button {
-        margin: 2vw 2vw;
+
+}
+
+@media(max-width: 600px) {
+
+    .shop-cards-container {
+        gap: 1rem;
     }
 
-    .charger-img {
-        padding-bottom: 3vw;
+    .empty-cart-container img {
+        height: 16rem;
     }
 
-    /*switch-pages */
-    .switch-pages {
-        height: 20vh;
+    .three-process {
+        display: flex;
+        gap: 5rem;
     }
 
-    .UA-neckband-1 {
-        height: 29vw;
+    .cart-navigation {
+        gap: 2rem;
+    }
+
+    .cart-products-bill {
+        height: 29rem;
     }
 }
 
 @media(max-width: 375px) {
-    #filter-prices {
-        font-size: 3vw;
+    .three-process i {
+        font-size: 0.8rem;
+        height: 1.5rem;
+        width: 1.5rem;
     }
 
-    .filter-price-container h4 {
-        padding: 4.5px 10px;
+    #cart-close-icon {
+        font-size: 1.5rem;
     }
 
-    .three-process {
-        gap: 19vw;
+    .cart-navigation {
+        gap: 1rem;
     }
 
-    .empty-cart-text-btn button {
-        font-size: 3.5vw;
-        padding: 1.5vw 6vw;
+    .payments-container {
+        width: 0%;
     }
+
+    .cart-products-container {
+        width: 21rem;
+    }
+
+
 }
+
+
+/* cart-page <end>*/

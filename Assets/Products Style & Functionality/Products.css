@@ -8,7 +8,10 @@ body {
     width: 100%;
     background-color: #EEEEEE;
     color: #151515;
+
 }
+
+
 
 main {
     padding-top: 10vh;
@@ -18,12 +21,14 @@ main {
 /* section-1 <start> */
 .product-section-1 {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
 }
 
 .product-slider-container {
     height: 100%;
-    width: 65%;
-    margin-top: 4vmax;
+    margin-top: 3rem;
     display: flex;
     align-items: center;
 }
@@ -32,12 +37,12 @@ main {
     display: inline-block;
     display: flex;
     flex-direction: column;
-    gap: 1vmax;
-    margin-left: 5vmax;
+    gap: 0.5rem;
+    margin-left: 4rem;
 }
 
 .thumbnails img {
-    width: 5vmax;
+    width: 4rem;
     cursor: pointer;
     border: 2px solid #EEEEEE;
 }
@@ -52,8 +57,8 @@ main {
 
 /* swiper-styles */
 .swiper {
-    width: 32vmax;
-    height: 32vmax;
+    width: 26rem;
+    height: 26rem;
 }
 
 .swiper .swiper-slide {
@@ -63,7 +68,7 @@ main {
 }
 
 .swiper-slide img {
-    width: 26vmax;
+    width: 20rem;
 }
 
 .swiper-pagination .swiper-pagination-bullet {
@@ -85,7 +90,6 @@ main {
 /* product-details */
 .product-detail {
     margin-top: 6vmax;
-    width: 45%;
 }
 
 .hide-class {
@@ -94,32 +98,32 @@ main {
 
 .product-detail h2 {
     font-weight: 500;
-    font-size: 2vmax;
+    font-size: 1.4rem;
 }
 
 .product-price {
     display: flex;
     align-items: center;
     gap: 6px;
-    margin-top: 0.8vmax;
+    margin-top: 0.4rem;
 }
 
 .product-price h3 {
     font-weight: 500;
-    font-size: 1.5vmax;
+    font-size: 1.2rem;
 }
 
 .product-price .cut-price {
     text-decoration: line-through;
-    font-size: 0.9vmax;
+    font-size: 0.7rem;
 }
 
 .product-color {
-    margin-top: 0.3vmax;
+    margin-top: 0.2rem;
 }
 
 .product-color h4 {
-    font-size: 1vmax;
+    font-size: 0.8rem;
     font-weight: 540;
 }
 
@@ -129,19 +133,19 @@ main {
 
 .product-quantity h4 {
     font-weight: 500;
-    font-size: 1vmax;
-    margin-top: 0.3vmax;
+    font-size: 0.83rem;
+    margin-top: 0.1rem;
 }
 
 .product-quantity-btn {
-    margin-top: 0.19vmax;
+    margin-top: 0.3rem;
     display: flex;
 }
 
 .product-quantity-btn button {
-    width: 2.2vmax;
-    height: 1.9vmax;
-    font-size: 1.2vmax;
+    width: 2rem;
+    height: 1.56rem;
+    font-size: 1rem;
     font-weight: 500;
     color: #565656;
     box-sizing: border-box;
@@ -165,12 +169,11 @@ main {
 }
 
 #number-of-quantity {
-    width: 2.2vmax;
-    height: 1.9vmax;
+    width: 1.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2vmax;
+    font-size: 1rem;
     box-sizing: border-box;
     border-top: 0.5px solid #565656;
     border-bottom: 0.5px solid #565656;
@@ -181,11 +184,11 @@ main {
 }
 
 #add-to-cart-btn {
-    width: 16vmax;
-    height: 2.5vmax;
-    margin-top: 0.5vmax;
+    width: 12rem;
+    height: 2rem;
+    margin-top: 0.3rem;
     font-weight: 700;
-    font-size: 1vmax;
+    font-size: 0.9rem;
     color: #EEEEEE;
     background-color: #A91D3A;
     border: none;
@@ -199,28 +202,40 @@ main {
 }
 
 .product-features h4 {
-    margin: 1vmax 0vmax 1vmax 0vmax;
-    font-size: 1.3vmax;
+    margin: 0.8rem 0rem 0.8rem 0rem;
+    font-size: 1rem;
 }
 
 .product-features ul {
-    margin-left: 1vmax;
-    width: 35vmax;
+    margin-left: 0.7rem;
+    width: 30rem;
 }
 
 .product-features ul li {
-    font-size: 1vmax;
-    margin-bottom: 0.5vmax;
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
 }
 
 /* section-1 <end> */
 /* section-2 <start> */
-.related-products h2 {
-    margin: 6vmax 0vmax 0vmax 5vmax;
-    font-size: 1.7vmax;
+
+.related-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.related-cards-container{
+.related-products h2 {
+    font-size: 1.5rem;
+    height: 8rem;
+    width: 71rem;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.related-cards-container {
     display: flex;
     gap: 6vw;
     flex-wrap: wrap;
@@ -229,140 +244,6 @@ main {
 
 .single-card {
     margin: 6vmax 0vmax 0vmax 5vmax;
-}
-
-.review-section #review-title {
-    margin: 6vmax 0vmax 0vmax 5vmax;
-    font-size: 1.7vmax;
-}
-
-#give-review {
-    margin: 2vmax 0vmax 0vmax 5vmax;
-    background-color: #DADADA;
-    padding: 0.5vmax 1vmax;
-    font-size: 1.1vmax;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-#give-review:hover {
-    filter: drop-shadow(0px 0px 2px #1515159b);
-}
-
-.review-container {
-    margin: 2vmax 0vmax 0vmax 5vmax;
-    padding-bottom: 5vmax;
-    display: flex;
-    gap: 2vmax;
-}
-
-.review {
-    background-color: #D9D9D9;
-    display: inline-block;
-    padding: 1vmax 2vmax 1vmax 1vmax;
-    border-radius: 10px;
-}
-
-.review-form{
-    position: fixed;
-    z-index: 980;
-    background-color: #eeeeee00;
-    backdrop-filter: blur(20px);
-    height: 100%;
-    width: 100%;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hide-review-form{
-    display: none;
-}
-
-.review-form form{
-    background-color: #D9D9D9;
-    height: 31vmax;
-    width: 59vmax;
-    display: flex;
-    flex-direction: column;
-    gap: 1vmax;
-}
-
-#reviewer-name{
-    margin-left: 5vmax;
-    width: 20vmax;
-    background-color: #EEEEEE;
-    font-size: 1.2vmax;
-    padding: 0.5vmax;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-}
-
-#reviewer-message{
-    margin-left: 5vmax;
-    width: 32vmax;
-    font-size: 1.2vmax;
-    background-color: #EEEEEE;
-    padding: 0.5vmax;
-    height: 10vmax;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-}
-
-.review-form-btns{
-    margin-left: 5vmax;
-}
-
-.review-form-btns button{
-    font-size: 1vmax;
-    padding: 0.3vmax 0.5vmax;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    font-weight: 550;
-}
-
-#review-submit-btn{
-    background-color: #A91D3A;
-    color: #EEEEEE;
-}
-#review-submit-btn:hover{
-    background-color: #750e23;
-}
-
-#review-cancel-btn{
-    color: #A91D3A;
-    background-color: #DADADA;
-}
-
-#review-form-title{
-    text-align: center;
-    color: #A91D3A;
-    font-size: 2vmax;
-    margin: 1.5vmax 0vmax 1.5vmax;
-}
-
-.user-name {
-    display: flex;
-    align-items: center;
-    gap: 0.5vmax;
-}
-
-.user-name img {
-    width: 2vmax;
-}
-
-.user-name p {
-    font-size: 1.2vmax;
-}
-
-.user-message p {
-    font-size: 1.1vmax;
-    margin: 0.8vmax 0vmax 0.5vmax;
 }
 
 /* section-2 <end> */
@@ -531,38 +412,9 @@ main {
         font-size: 3.5vmax;
     }
 
-    .review-container {
-        flex-wrap: wrap;
-    }
-
-    .review-section h2 {
-        font-size: 3.5vmax;
-    }
-
-    #give-review {
-        padding: 0.7vmax 1.2vmax;
-        font-size: 2.1vmax;
-    }
-
-    .review {
-        padding: 2vmax 3vmax 2vmax 2vmax;
-    }
-
-    .user-name img {
-        width: 4vmax;
-    }
-
-    .user-name p {
-        font-size: 2.2vmax;
-    }
-
-    .user-message p {
-        font-size: 2.1vmax;
-        margin: 1.1vmax 0vmax 0.5vmax;
-    }
 }
 
-@media(max-width: 370px){
+@media(max-width: 370px) {
     .swiper-slide img {
         width: 38vmax;
     }
@@ -572,7 +424,8 @@ main {
         margin: 0;
     }
 
-    .swiper-button-next:after, .swiper-button-prev:after {
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
         font-size: 17px !important;
     }
 
@@ -635,26 +488,5 @@ main {
 
     .related-products h2 {
         font-size: 5vw;
-    }
-
-    .review-section h2 {
-        font-size: 5vw;
-    }
-
-    #give-review {
-        padding: 2vw 2vw;
-        font-size: 3.4vw;
-    }
-
-    .user-name img {
-        width: 5.5vw;
-    }
-
-    .user-name p {
-        font-size: 3.5vw;
-    }
-
-    .user-message p {
-        font-size: 3.5vw;
     }
 }

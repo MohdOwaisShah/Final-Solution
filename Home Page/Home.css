@@ -13,7 +13,7 @@ body {
 /* main <start>*/
 /* section-1 <start> */
 .section-1 {
-    min-height: 38rem;
+    min-height: 34rem;
     width: 100%;
     background-color: #EEEEEE;
     display: flex;
@@ -70,7 +70,7 @@ body {
     min-height: 30rem;
     width: 100%;
     background-color: #151515;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 
 .section-2 h2 {
@@ -91,51 +91,6 @@ body {
     border-radius: 10px;
 }
 
-.product-card .card-1,
-.card-2,
-.card-3 {
-    height: 16rem;
-    width: 13rem;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    border: 2px solid #A91D3A;
-}
-
-.card-image,
-.card-image-3 {
-    height: 69%;
-    width: 100%;
-    background-color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-}
-
-.card-image img {
-    /*card-image 1 and 2*/
-    height: 9rem;
-    transition: height 0.2s ease;
-}
-
-.card-image img:hover {
-    height: 10rem;
-}
-
-.card-image-3 img {
-    height: 8rem;
-    transition: height 0.2s ease;
-}
-
-.card-image-3 img:hover {
-    height: 9rem;
-}
-
-.best-seller-product-details h3 {
-    color: #A91D3A;
-    font-size: 0.9rem;
-    margin-left: 12px;
-}
 
 .review-star {
     margin-left: 12px;
@@ -209,6 +164,7 @@ body {
 .companeis-logo #mi {
     height: 2rem;
 }
+
 /* section-2 <end> */
 
 /* section-3 <start> */
@@ -226,11 +182,11 @@ body {
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 4rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .review-card-container {
-    width: 57rem;
+    max-width: 57rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -256,11 +212,11 @@ body {
 .image-and-name-of-reviewer h3 {
     color: #EEEEEE;
     border-bottom: 1px solid #A91D3A;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
 
 .image-and-name-of-reviewer img {
-    height: 3rem;
+    height: 3.2rem;
     border-radius: 50%;
     margin: 15px;
     border: 3px solid #A91D3A;
@@ -274,7 +230,7 @@ body {
 
 .review-text-and-star h3 {
     color: #EEEEEE;
-    font-size: 0.8rem;
+    font-size: 0.89rem;
     font-weight: 500;
     margin-left: 15px;
     width: 88%;
@@ -330,263 +286,103 @@ body {
 
 /* page responsiveness */
 
-@media(max-width: 1028px) {
+@media(max-width: 1024px) {
 
-    .section-4 {
-        flex-direction: column;
+    /* .section-1 */
+    .section-1 {
+        gap: 12rem;
     }
 
-    .happy-customer-img {
-        margin-top: 10%;
-        margin-left: 0;
+    /* .product-card */
+    .product-card {
+        gap: 3rem;
     }
 
-    .about-finalsolution h2 {
-        text-align: center;
+    /* section-2 */
+    .companeis-logo {
+        gap: 6rem;
     }
 
-    .about-finalsolution {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+}
+
+@media(max-width: 768px) {
+
+    /* .section-1 */
+    .section-1 {
+        gap: 3rem;
     }
 
-    .about-finalsolution p {
-        font-size: 2vw;
-        text-align: center;
+    /* .section-2 */
+    /* .companeis-logo */
+    .companeis-logo {
+        gap: 3rem;
     }
 
+    /* .section-3 */
     .review-card-container .review-card {
-        height: 15vmax;
+        height: 11rem;
+        width: 21rem;
+    }
+
+    /* .section-4  */
+    .section-4 {
+        gap: 2rem;
     }
 }
 
 @media(max-width: 600px) {
 
-    /* section-1 */
+    /* .section-1 */
     .section-1 {
+        height: 38rem;
+        padding-bottom: 2rem;
+        gap: 1rem;
         flex-direction: column;
-        height: 100vh;
     }
 
-    .right-container {
-        height: 0%;
-        margin-bottom: 31%;
-        gap: 12px;
+    /* .section-2 */
+
+    .companeis-logo {
+        gap: 1rem;
     }
 
-    .display-images img {
-        height: 50vw;
-    }
-
-    .left-container {
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        text-align: left;
-    }
-
-    .left-container h1 {
-        margin-left: 0;
-        font-size: 6vw;
-        width: 85%;
-    }
-
-    .left-container p {
-        margin-left: 0;
-        width: 85%;
-        font-size: 5.5vw;
-    }
-
-    .left-container .repair-and-shop-btn {
-        margin-left: 0;
-        width: 85%;
-    }
-
-    .right-container {
-        width: 100%;
-    }
-
-
-    /* section-2 */
-    .section-2 h2 {
-        font-size: 5vw;
-    }
-
-    /* section-3 */
-    .section-3 {
-        height: 100%;
-    }
-
-
-    .review-card-container {
-        padding-bottom: 14%;
-        gap: 22px;
-    }
-
-    .review-card-container .review-card {
-        width: 76vw;
-    }
-
-    .review-card-container .review-card {
-        height: 30vw;
-    }
-
-    .image-and-name-of-reviewer img {
-        height: 8.5vw;
-    }
-
-    .image-and-name-of-reviewer h3 {
-        font-size: 2.5vw;
-    }
-
-    .review-text-and-star h3 {
-        font-size: 2.9vw;
-    }
-
-    .review-star i {
-        font-size: 2.3vw;
-    }
-
-    /* section-4 */
+    /* .section-4 */
     .section-4 {
-        height: 100%;
+        flex-direction: column;
+        height: 39rem;
+        text-align: center;
     }
-
-    .about-finalsolution h2 {
-        font-size: 7.5vw;
-    }
-
-    .about-finalsolution p {
-        font-size: 4.5vw;
-    }
-
-    .section-3 h2 {
-        font-size: 5vw;
-        padding-top: 50px;
-        padding-bottom: 30px;
-    }
-
-
 }
 
-@media(max-width: 428px) {
 
-    /* section-1 */
-    .left-container {
-        height: 70%;
-        gap: 9px;
-    }
-
-    .left-container .repair-and-shop-btn {
-        margin-top: 10px;
-    }
-
-    /* section-2 */
-
-    .section-2 h2 {
-        font-size: 9vw;
-        padding: 20px 0px;
-    }
-
-    .section-2 {
-        height: 100%;
-    }
-
-    .product-card {
-        height: 100%;
-        flex-direction: column;
-    }
-
-    .product-card .card-1,
-    .card-2,
-    .card-3 {
-        margin-bottom: 45px;
-        height: 64vw;
-        width: 67vw;
-    }
-
-    .card-image img {
-        height: 35vw;
-    }
-
-    .card-image img:hover {
-        height: 40vw;
-    }
-
-    .card-image-3 img {
-        height: 30vw;
-    }
-
-    .card-image-3 img:hover {
-        height: 35vw;
-    }
-
-    .best-seller-product-details h3 {
-        font-size: 4.8vw;
-    }
-
-    .review-star i {
-        font-size: 3.3vw;
-    }
-
-    .discount-and-orderbtn h4 {
-        font-size: 4vw;
-    }
-
-    .discount-and-orderbtn h4 {
-        font-size: 4vw;
-    }
-
-    .discount-and-orderbtn button {
-        font-size: 3.5vw;
-    }
+@media(max-width: 499px) {
 
     .companeis-logo #boat {
-        height: 3vw;
+        height: 1rem;
     }
 
-    .companeis-logo #urban-audio {
-        height: 7vw;
-    }
-
-    .companeis-logo #oneplus {
-        height: 7vw;
-    }
-
-    .companeis-logo #oppo {
-        height: 4vw;
-    }
 
     .companeis-logo #sumsung {
-        height: 9vw;
+        height: 3rem;
     }
 
     .companeis-logo #mi {
-        height: 4vw;
+        height: 1rem;
     }
 
-    /* section-3 */
-    .review-card-container .review-card {
-        height: 37vw;
+    .companeis-logo #urban-audio {
+        height: 2rem;
     }
 
-}
-
-@media(max-width: 325x) {
-
-    /*section-3*/
-    .review-card-container .review-card {
-        height: 45vw;
+    .companeis-logo #oneplus {
+        height: 2rem;
     }
 
-    /*section-5*/
-    .our-promise-content {
-        gap: 0px;
+    .companeis-logo #oppo {
+        height: 1rem;
     }
 
-    .text-container p {
-        font-size: 3vw;
+    .product-card {
+        gap: 1rem;
     }
 }

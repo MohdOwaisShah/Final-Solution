@@ -1,0 +1,108 @@
+.maroon-color {
+    color: #a91d3a;
+    text-transform: uppercase;
+}
+
+
+/* login-signup-main-container */
+.login-signup-main-container {
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-signup-container {
+    height: 20rem;
+    width: 20rem;
+}
+
+/* auth-forms */
+#auth-forms h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.same-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.same-form input {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+    width: 15rem;
+    outline: none;
+    border: 0.08rem solid #A3A3A3;
+    border-radius: 0.3rem;
+    color: #151515;
+    text-transform: lowercase;
+}
+
+.same-form button {
+    width: 15rem;
+    height: 2.34rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #A21A24;
+    color: #EDEDED;
+    border: none;
+    border-radius: 0.3rem;
+    transition: all 0.2s ease;
+}
+
+.same-form button:hover {
+    background-color: #78151c;
+
+}
+
+.same-form p {
+    color: #8a8a8a;
+    font-size: 0.9rem;
+}
+
+.same-form p a {
+    color: #8a8a8a;
+    font-weight: bold;
+}
+
+/* logout-section */
+#logout-section h2 {
+    font-size: 1.5rem;
+    padding: 1rem 0rem;
+}
+
+#logout-section button {
+    width: 15rem;
+    height: 2.34rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #A21A24;
+    color: #EDEDED;
+    border: none;
+    border-radius: 0.3rem;
+    transition: all 0.2s ease;
+}
+
+#logout-section button:hover {
+    background-color: #78151c;
+
+}
+
+
+/* status */
+#status {
+    text-align: center;
+    padding: 1rem 0rem;
+    line-height: 1.4;
+}
+
+
+.hidden {
+    display: none;
+}
